@@ -1,0 +1,156 @@
+<!-- ===== HERO SECTION ===== -->
+<section class="relative overflow-hidden min-h-[460px] md:min-h-[520px] flex items-center hero-gradient">
+  <img
+    src="/assets/images/header-express-home.jpg"
+    alt="VitaLink Express delivery van"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+  />
+  <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30 md:to-transparent"></div>
+
+  <div class="relative z-10 w-full max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="max-w-[640px] flex flex-col gap-5">
+      <span class="inline-flex items-center self-start px-3 py-1 border border-lavender bg-white/10 rounded-sm">
+        <span class="font-body font-semibold text-sm text-white tracking-wide">{{ 'express.home.badge' | translate }}</span>
+      </span>
+
+      <h1 class="font-headline font-bold text-white text-4xl md:text-5xl leading-[1.1] tracking-[-0.96px]">
+        {{ 'express.home.headline' | translate }}
+      </h1>
+
+      <p class="font-body text-white/90 text-base md:text-lg leading-relaxed max-w-[560px]">
+        {{ 'express.home.subheading' | translate }}
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 w-full max-w-sm md:max-w-2xl">
+        <a
+          routerLink="/express/contact"
+          class="flex items-center justify-center px-8 py-4 bg-brand-red text-white font-body font-semibold text-base rounded-sm shadow-sm hover:bg-brand-red-dark transition-colors"
+        >{{ 'express.home.cta' | translate }}</a>
+
+        <button
+          (click)="openMessageModal()"
+          type="button"
+          class="flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-body font-semibold text-base rounded-sm shadow-sm hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12H12V10H4V12V12M4 9H16V7H4V9V9M4 6H16V4H4V6V6M0 20V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H4L0 20V20M3.15 14H18V14V14V2V2V2H2V2V2V15.125L3.15 14V14M2 14V14V2V2V2V2V2V2V14V14V14V14V14" fill="white"/>
+          </svg>
+          {{ 'footer.contactDispatch.whatsapp' | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTORS FEATURED ===== -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 flex flex-col items-center gap-3">
+      <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight">
+        {{ 'express.home.sectors_title' | translate }}
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      @for (sector of sectors; track sector.key) {
+        <a
+          [routerLink]="['/express/sectors', sector.key]"
+          class="group block p-6 bg-light-gray border border-lavender rounded-sm hover:border-brand-red hover:shadow-lg transition-all duration-300"
+        >
+          <div class="w-10 h-10 flex items-center justify-center mb-4">
+            @switch (sector.key) {
+              @case ('automobiles') {
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z" fill="#D42E2E"/>
+                </svg>
+              }
+              @case ('agriculture') {
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.94-1.36C19.63 14.27 20 4 20 4S9.73 4.36 6.05 8.05z" fill="#D42E2E"/>
+                </svg>
+              }
+              @case ('food-beverage') {
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z" fill="#D42E2E"/>
+                </svg>
+              }
+              @case ('machinery') {
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" fill="#D42E2E"/>
+                </svg>
+              }
+            }
+          </div>
+          <h3 class="font-headline font-bold text-navy text-lg mb-2 group-hover:text-brand-red transition-colors">
+            {{ 'express.sectors.' + sector.key + '.title' | translate }}
+          </h3>
+          <p class="font-body text-text-secondary text-sm leading-relaxed">
+            {{ 'express.sectors.' + sector.key + '.description' | translate }}
+          </p>
+          <div class="mt-4 text-brand-red font-semibold text-sm group-hover:translate-x-1 transition-transform">
+            {{ 'express.common.learnMore' | translate }} →
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY EXPRESS ===== -->
+<section class="bg-light-gray py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight mb-4">
+        {{ 'express.home.why_title' | translate }}
+      </h2>
+      <p class="font-body text-text-secondary text-base md:text-lg max-w-2xl mx-auto">
+        {{ 'express.home.why_description' | translate }}
+      </p>
+    </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-8 rounded-sm border border-lavender">
+        <div class="w-9 h-9 flex items-center justify-center mb-4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 2v11h3v9l7-12h-4l4-8z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg mb-2">{{ 'express.home.speed' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm">{{ 'express.home.speed_desc' | translate }}</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-sm border border-lavender">
+        <div class="w-9 h-9 flex items-center justify-center mb-4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg mb-2">{{ 'express.home.reliable' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm">{{ 'express.home.reliable_desc' | translate }}</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-sm border border-lavender">
+        <div class="w-9 h-9 flex items-center justify-center mb-4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg mb-2">{{ 'express.home.professional' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm">{{ 'express.home.professional_desc' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="bg-navy py-12 md:py-16">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="font-headline font-bold text-white text-xl md:text-2xl mb-6">
+      {{ 'express.home.ready_title' | translate }}
+    </h2>
+    <a
+      routerLink="/express/contact"
+      class="inline-block px-8 py-3 bg-brand-red text-white font-body font-semibold rounded-sm hover:bg-brand-red-dark transition-colors"
+    >{{ 'express.home.ready_cta' | translate }}</a>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+<div class="min-h-screen bg-white flex flex-col items-center justify-center px-4 xs:px-6 sm:px-8 md:px-12 lg:px-20 py-12">
+  <!-- Main Container -->
+  <div class="w-full max-w-[1240px] flex flex-col items-center">
+
+    <!-- Illustration -->
+    <div class="mb-8 xs:mb-10 sm:mb-12 md:mb-14 lg:mb-16 w-full xs:w-80 sm:w-96 md:w-[420px] lg:w-[480px]">
+      <img
+        src="assets/images/404-ambulance.svg"
+        alt="Lost in Transit - Ambulance with location pin"
+        class="w-full h-auto drop-shadow-lg"
+      />
+    </div>
+
+    <!-- Content Card -->
+    <div class="w-full max-w-2xl bg-white rounded-lg border border-gray-200 px-6 xs:px-8 sm:px-10 md:px-12 py-8 xs:py-10 sm:py-12 md:py-14 text-center shadow-sm">
+
+      <!-- Headline -->
+      <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4 xs:mb-5 sm:mb-6">
+        {{ 'notFound.headline' | translate }}
+      </h1>
+
+      <!-- Subheading -->
+      <p class="text-sm xs:text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed mb-8 xs:mb-10 sm:mb-12 font-normal">
+        {{ 'notFound.subheading' | translate }}
+      </p>
+
+      <!-- Buttons Container -->
+      <div class="flex flex-col xs:flex-row gap-4 sm:gap-5 md:gap-6 justify-center">
+
+        <!-- Primary Button - Go to Home -->
+        <a
+          [routerLink]="isExpress() ? '/express' : '/'"
+          class="inline-flex items-center justify-center bg-brand-red hover:bg-red-700 text-white font-semibold py-2.5 xs:py-3 sm:py-3 px-6 xs:px-7 sm:px-8 rounded transition-colors duration-200 text-sm xs:text-base sm:text-base whitespace-nowrap"
+        >
+          <svg class="w-4 xs:w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          </svg>
+          {{ 'notFound.btnHome' | translate }}
+        </a>
+
+        <!-- Secondary Button - View Services -->
+        <a
+          [routerLink]="isExpress() ? '/express/services' : '/services'"
+          class="inline-flex items-center justify-center border-2 border-gray-300 hover:border-gray-400 text-gray-800 font-semibold py-2.5 xs:py-3 sm:py-3 px-6 xs:px-7 sm:px-8 rounded transition-colors duration-200 text-sm xs:text-base sm:text-base whitespace-nowrap"
+        >
+          {{ 'notFound.btnServices' | translate }}
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>

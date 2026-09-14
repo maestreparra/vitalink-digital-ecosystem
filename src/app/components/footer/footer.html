@@ -1,0 +1,124 @@
+<footer class="bg-light-gray border-t border-border-gray">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- 4-column grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-6">
+
+      <!-- Col 1: Logo + Description -->
+      <div class="flex flex-col gap-4 lg:col-span-2 xl:col-span-1">
+        <a [routerLink]="isExpress() ? '/express' : '/'">
+          <img
+            src="/assets/images/vitalink-logo.png"
+            alt="VitaLink Courier LLC"
+            class="h-[42px] w-auto"
+          />
+        </a>
+        <p class="font-body text-base text-text-secondary leading-relaxed max-w-[280px]">
+          {{ (isExpress() ? 'footer.expressDescription' : 'footer.description') | translate }}
+        </p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="flex flex-col gap-4">
+        <h2 class="font-body font-semibold text-sm text-navy uppercase tracking-label">{{ 'footer.quickLinks.title' | translate }}</h2>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a [routerLink]="isExpress() ? '/express/services' : '/services'" class="font-body text-base text-navy hover:text-brand-red transition-colors">{{ 'footer.quickLinks.services' | translate }}</a>
+          </li>
+          <li>
+            <a [routerLink]="isExpress() ? '/express/codes-certs' : '/certifications'" class="font-body text-base text-navy hover:text-brand-red transition-colors">{{ 'footer.quickLinks.certifications' | translate }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Certifications -->
+      <div class="flex flex-col gap-4">
+        <h2 class="font-body font-semibold text-sm text-navy uppercase tracking-label">{{ 'footer.certifications.title' | translate }}</h2>
+
+        @if (isExpress()) {
+          <!-- Express: DOT / IFTA / Insurance / Safety badges -->
+          <div class="flex flex-col gap-3">
+            @for (cert of expressCertifications; track cert) {
+              <div class="flex items-center gap-2">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+                  <path d="M5.4 10.8L1.6 7L2.98 5.62L5.4 8.03L11.02 2.4L12.4 3.79L5.4 10.8Z" fill="#D42E2E"/>
+                </svg>
+                <span class="font-body text-base text-text-secondary">{{ cert | translate }}</span>
+              </div>
+            }
+          </div>
+        } @else {
+          <!-- Medical: HIPAA / TSA / OSHA / SAM.gov logos -->
+          <div class="grid grid-cols-2 gap-x-2 gap-y-6">
+            <!-- HIPAA logo -->
+            <img
+              src="/assets/images/hipaa-compliant.png"
+              alt="HIPAA Compliant"
+              class="h-14 w-auto object-contain"
+            />
+            <!-- TSA ConfirmID -->
+            <svg width="105" height="18" viewBox="0 0 105 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center">
+              <path d="M47.0581 3.69531C46.5187 3.48195 45.7601 3.31008 44.96 3.31008C42.9449 3.31008 42.1863 4.19315 42.1863 6.95202C42.1863 9.88276 42.9746 10.7777 45.0015 10.7777C45.8016 10.7777 46.4921 10.594 47.0847 10.3213L47.307 11.9571C46.6313 12.2979 45.6505 12.5557 44.7526 12.5557C41.647 12.5557 40.1831 10.7777 40.1831 6.93721C40.1831 3.3249 41.6322 1.50244 44.8622 1.50244C45.7038 1.50244 46.6847 1.7158 47.2655 1.97065L47.0581 3.69235V3.69531Z" fill="#808080"/>
+              <path d="M51.681 12.5585C49.1148 12.5585 47.9531 11.2784 47.9531 8.1076C47.9531 4.93683 49.1118 3.64185 51.681 3.64185C54.2502 3.64185 55.3674 4.95164 55.3674 8.1076C55.3674 11.2636 54.2621 12.5585 51.681 12.5585ZM51.681 11.0354C53.0471 11.0354 53.5598 10.3538 53.5598 8.10463C53.5598 5.85546 53.0501 5.17389 51.681 5.17389C50.3119 5.17389 49.7756 5.85546 49.7756 8.10463C49.7756 10.3538 50.3149 11.0354 51.681 11.0354Z" fill="#808080"/>
+              <path d="M8.549 5.28653V17.0895H4.29957V5.28653H0.536133L0.616143 1.53198H12.2532L12.3332 5.28653H8.549Z" fill="#005380"/>
+              <path d="M17.7055 17.383C15.9542 17.383 14.2621 16.9681 12.8931 16.2421L13.4176 12.6535C14.7866 13.3588 16.1972 13.7736 17.667 13.7736C19.0153 13.7736 19.5398 13.3588 19.5398 12.5913C19.5398 10.6829 12.9168 11.4919 12.9168 6.24379C12.9168 3.50567 14.6296 1.26538 18.6745 1.26538C20.1858 1.26538 21.8364 1.55579 23.0632 2.05363L22.5802 5.55926C21.2704 5.16514 19.9814 4.9577 18.9146 4.9577C17.2847 4.9577 16.9617 5.41406 16.9617 6.01561C16.9617 7.94475 23.567 7.07353 23.567 12.3216C23.567 15.4331 21.3534 17.383 17.7085 17.383H17.7055Z" fill="#005380"/>
+              <path d="M33.1238 14.4136H28.4536L27.7898 17.0895H23.3389L28.3528 1.53198H33.3875L38.4815 17.0925H33.7906L33.1268 14.4166L33.1238 14.4136ZM30.4064 6.59337L29.3189 10.9495H32.2793L31.2125 6.61411L30.8509 4.95464H30.7917L30.4094 6.59337H30.4064Z" fill="#005380"/>
+              <path d="M103.486 17.0925H41.1371C40.5978 17.0925 40.1592 16.4731 40.1592 15.7086C40.1592 14.944 40.5978 14.3247 41.1371 14.3247H103.486C104.025 14.3247 104.464 14.944 104.464 15.7086C104.464 16.4731 104.025 17.0925 103.486 17.0925Z" fill="#14A0DE"/>
+            </svg>
+            <!-- OSHA logo -->
+            <svg width="80" height="23" viewBox="0 0 100 29" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-center">
+              <path d="M7.82296 10.0168C9.23171 8.06353 11.522 6.79297 14.1077 6.79297C18.3905 6.79297 21.8621 10.278 21.8621 14.5775C21.8621 18.8768 18.3905 22.3618 14.1077 22.3618C10.9377 22.3618 8.21199 20.4524 7.00977 17.7162C7.97546 18.8305 9.39824 19.5347 10.9852 19.5347C13.8945 19.5347 16.253 17.167 16.253 14.2464C16.253 11.3258 13.8946 8.95835 10.9852 8.95835C9.79865 8.95835 8.70379 9.3525 7.82296 10.0168Z" fill="#939598"/>
+              <path d="M0 14.5468C0 8.46641 4.91 3.53711 10.9671 3.53711C14.9115 3.53711 18.3697 5.6279 20.3022 8.76575C18.7549 7.10439 16.5519 6.0661 14.1075 6.0661C9.42514 6.0661 5.62903 9.87682 5.62903 14.5777C5.62903 19.2787 9.42514 23.0894 14.1075 23.0894C16.4919 23.0894 18.6464 22.1014 20.1868 20.5109C18.2344 23.5468 14.8344 25.5565 10.9669 25.5565C4.91 25.5563 0 20.6273 0 14.5468Z" fill="#0082C4"/>
+              <path d="M0.810547 8.68369C3.04444 3.63643 8.0818 0.116699 13.9385 0.116699C21.8682 0.116699 28.2967 6.5699 28.2967 14.5307C28.2967 22.4917 21.8682 28.9452 13.9385 28.9452C8.13638 28.9452 3.13791 25.4902 0.873464 20.5183C2.91152 23.9824 6.66888 26.3061 10.9671 26.3061C17.4365 26.3061 22.681 21.0412 22.681 14.5468C22.681 8.05196 17.4365 2.78735 10.9671 2.78735C6.6243 2.78735 2.83332 5.15935 0.810547 8.68369Z" fill="black"/>
+              <path d="M43.6165 6.82916C43.3865 4.98236 43.2332 3.13556 43.2332 1.32683C42.0447 1.17318 38.7868 0.749756 37.714 0.749756C32.7693 0.749756 29.2435 3.7125 29.2435 8.71458C29.2435 17.9876 40.5117 15.8714 40.5117 22.682C40.5117 25.4138 38.4036 27.0684 35.7974 27.0684C32.1561 27.0684 30.3164 24.2211 29.8567 20.9506L28.7832 21.1812C28.975 23.1435 29.2435 25.0677 29.4347 27.0299C31.3129 27.9919 33.3828 28.7615 35.5293 28.7615C40.4351 28.7615 44.8047 25.9908 44.8047 20.6813C44.8047 11.4464 33.3063 13.3705 33.3063 6.98322C33.3063 3.9431 34.9928 2.13506 38.0203 2.13506C40.6651 2.13506 42.2751 4.52073 42.5431 7.0217" fill="black"/>
+            </svg>
+            <!-- SAM.gov logo -->
+            <img
+              src="/assets/images/sam-gov-badge.png"
+              alt="SAM.gov Registered"
+              class="h-6 w-auto object-contain self-center"
+            />
+          </div>
+        }
+      </div>
+
+      <!-- Col 4: Contact Dispatch -->
+      <div class="flex flex-col gap-4">
+        <h2 class="font-body font-semibold text-sm text-navy uppercase tracking-label">{{ 'footer.contactDispatch.title' | translate }}</h2>
+        <ul class="flex flex-col gap-2">
+          <li class="flex items-center gap-2">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+              <path d="M4.66667 5.83333C4.9875 5.83333 5.26215 5.7191 5.49062 5.49062C5.7191 5.26215 5.83333 4.9875 5.83333 4.66667C5.83333 4.34583 5.7191 4.07118 5.49062 3.84271C5.26215 3.61424 4.9875 3.5 4.66667 3.5C4.34583 3.5 4.07118 3.61424 3.84271 3.84271C3.61424 4.07118 3.5 4.34583 3.5 4.66667C3.5 4.9875 3.61424 5.26215 3.84271 5.49062C4.07118 5.7191 4.34583 5.83333 4.66667 5.83333ZM4.66667 10.1208C5.85278 9.03194 6.73264 8.04271 7.30625 7.15312C7.87986 6.26354 8.16667 5.47361 8.16667 4.78333C8.16667 3.72361 7.82882 2.8559 7.15312 2.18021C6.47743 1.50451 5.64861 1.16667 4.66667 1.16667C3.68472 1.16667 2.8559 1.50451 2.18021 2.18021C1.50451 2.8559 1.16667 3.72361 1.16667 4.78333C1.16667 5.47361 1.45347 6.26354 2.02708 7.15312C2.60069 8.04271 3.48056 9.03194 4.66667 10.1208ZM4.66667 11.6667C3.10139 10.3347 1.93229 9.09757 1.15937 7.95521C0.386458 6.81285 0 5.75556 0 4.78333C0 3.325 0.469097 2.16319 1.40729 1.29792C2.34549 0.432639 3.43194 0 4.66667 0C5.90139 0 6.98785 0.432639 7.92604 1.29792C8.86424 2.16319 9.33333 3.325 9.33333 4.78333C9.33333 5.75556 8.94688 6.81285 8.17396 7.95521C7.40104 9.09757 6.23194 10.3347 4.66667 11.6667Z" fill="#6E7E8C"/>
+            </svg>
+            <span class="font-body text-base text-text-secondary">{{ 'footer.contactDispatch.address' | translate }}</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0">
+              <path d="M9.8875 10.5C8.67222 10.5 7.47153 10.2351 6.28542 9.70521C5.09931 9.17535 4.02014 8.4243 3.04792 7.45208C2.07569 6.47986 1.32465 5.40069 0.794792 4.21458C0.264931 3.02847 0 1.82778 0 0.6125C0 0.4375 0.0583333 0.291667 0.175 0.175C0.291667 0.0583333 0.4375 0 0.6125 0H2.975C3.11111 0 3.23264 0.0461806 3.33958 0.138542C3.44653 0.230903 3.50972 0.340278 3.52917 0.466667L3.90833 2.50833C3.92778 2.66389 3.92292 2.79514 3.89375 2.90208C3.86458 3.00903 3.81111 3.10139 3.73333 3.17917L2.31875 4.60833C2.51319 4.96806 2.7441 5.31562 3.01146 5.65104C3.27882 5.98646 3.57292 6.30972 3.89375 6.62083C4.19514 6.92222 4.51111 7.20174 4.84167 7.45937C5.17222 7.71701 5.52222 7.95278 5.89167 8.16667L7.2625 6.79583C7.35 6.70833 7.46424 6.64271 7.60521 6.59896C7.74618 6.55521 7.88472 6.54306 8.02083 6.5625L10.0333 6.97083C10.1694 7.00972 10.2812 7.08021 10.3687 7.18229C10.4562 7.28437 10.5 7.39861 10.5 7.525V9.8875C10.5 10.0625 10.4417 10.2083 10.325 10.325C10.2083 10.4417 10.0625 10.5 9.8875 10.5Z" fill="#6E7E8C"/>
+            </svg>
+            <span class="font-body text-base text-text-secondary">{{ 'footer.contactDispatch.availability' | translate }}</span>
+          </li>
+          <li class="pt-1">
+            <button
+              (click)="openMessageModal()"
+              type="button"
+              class="inline-flex items-center gap-2 bg-whatsapp text-white font-body font-semibold text-sm px-4 py-2 rounded-sm hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+            >
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.33333 7H7V5.83333H2.33333V7ZM2.33333 5.25H9.33333V4.08333H2.33333V5.25ZM2.33333 3.5H9.33333V2.33333H2.33333V3.5ZM0 11.6667V1.16667C0 0.845833 0.114236 0.571181 0.342708 0.342708C0.571181 0.114236 0.845833 0 1.16667 0H10.5C10.8208 0 11.0955 0.114236 11.324 0.342708C11.5524 0.571181 11.6667 0.845833 11.6667 1.16667V8.16667C11.6667 8.4875 11.5524 8.76215 11.324 8.99063C11.0955 9.2191 10.8208 9.33333 10.5 9.33333H2.33333L0 11.6667Z" fill="white"/>
+              </svg>
+              {{ 'footer.contactDispatch.whatsapp' | translate }}
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-2 pt-8 mt-8 border-t border-border-gray">
+      <p class="font-body text-base text-text-secondary text-center sm:text-left">
+        {{ 'footer.copyright' | translate }}
+      </p>
+    </div>
+  </div>
+</footer>

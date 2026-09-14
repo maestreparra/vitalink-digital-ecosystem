@@ -1,0 +1,306 @@
+<!-- Headline Section -->
+<section class="bg-white pt-16 pb-10 md:pt-20 md:pb-12 border-b border-border-gray">
+  <div class="max-w-[1240px] mx-auto px-6 text-center">
+    <h1 class="font-headline font-bold text-navy text-[32px] md:text-[40px] leading-tight tracking-tight mb-3">
+      {{ contactKey('contact.headline', 'express.contact.title') | translate }}
+    </h1>
+    <p class="font-body text-text-secondary text-base leading-relaxed max-w-xl mx-auto">
+      {{ contactKey('contact.subheading', 'express.contact.description') | translate }}
+    </p>
+  </div>
+</section>
+
+<!-- Main Two-Column Layout -->
+<section class="bg-page-bg py-12 md:py-16">
+  <div class="max-w-[1240px] mx-auto px-6">
+    <div class="flex flex-col lg:flex-row gap-8 items-start">
+
+      <!-- LEFT: Quote Intake Form (sticky on desktop) -->
+      <div class="w-full lg:w-[60%] lg:sticky lg:top-8">
+        <div class="bg-white border border-lavender rounded-sm p-8 shadow-sm">
+
+          <h2 class="font-headline font-bold text-navy text-xl mb-6">{{ contactKey('contact.form.title', 'express.contact.form.title') | translate }}</h2>
+
+          @if (handoffRequired()) {
+            <!-- Local validation complete; no network submission occurs. -->
+            <div role="status" class="flex items-start gap-4 bg-amber-50 border border-amber-200 rounded-sm p-5">
+              <svg class="flex-shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5H11V11H9V5ZM9 13H11V15H9V13ZM10 0C4.48 0 0 4.48 0 10S4.48 20 10 20 20 15.52 20 10 15.52 0 10 0Z" fill="#D97706"/>
+              </svg>
+              <div>
+                <p class="font-body font-semibold text-amber-900 text-sm mb-1">{{ contactKey('contact.form.handoffTitle', 'express.contact.form.handoffTitle') | translate }}</p>
+                <p class="font-body text-amber-800 text-sm leading-relaxed mb-4">
+                  {{ contactKey('contact.form.handoffMessage', 'express.contact.form.handoffMessage') | translate }}
+                </p>
+                <button
+                  type="button"
+                  (click)="openValidatedMessageModal()"
+                  class="font-body font-semibold text-sm px-4 py-2 bg-navy text-white rounded-sm hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-navy/30"
+                >
+                  {{ contactKey('contact.form.handoffAction', 'express.contact.form.handoffAction') | translate }}
+                </button>
+              </div>
+            </div>
+          } @else {
+            <form (submit)="onSubmit($event)" novalidate>
+              @if (submissionAttempted() && !isFormValid()) {
+                <div
+                  id="contact-form-errors"
+                  role="alert"
+                  tabindex="-1"
+                  class="mb-5 rounded-sm border border-red-300 bg-red-50 p-4 font-body text-sm text-red-800"
+                >
+                  {{ 'contact.form.errors.summary' | translate }}
+                </div>
+              }
+              <!-- Row 1: Full Name + Phone -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <!-- Full Name -->
+                <div class="flex flex-col gap-1">
+                  <label class="font-body font-semibold text-navy text-sm" for="fullName">{{ 'contact.form.fullName' | translate }}</label>
+                  <input
+                    id="fullName"
+                    type="text"
+                    [placeholder]="'contact.form.fullNamePlaceholder' | translate"
+                    autocomplete="name"
+                    [value]="f.fullName.value"
+                    (input)="updateField('fullName', $any($event.target).value)"
+                    (blur)="blurField('fullName')"
+                    [attr.aria-invalid]="showError('fullName')"
+                    [attr.aria-describedby]="showError('fullName') ? errorId('fullName') : null"
+                    [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('fullName') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                  />
+                  @if (showError('fullName')) {
+                    <span [id]="errorId('fullName')" class="font-body text-red-700 text-xs">{{ f.fullName.error | translate }}</span>
+                  }
+                </div>
+
+                <!-- Phone Number -->
+                <div class="flex flex-col gap-1">
+                  <label class="font-body font-semibold text-navy text-sm" for="phone">{{ 'contact.form.phone' | translate }}</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    [placeholder]="'contact.form.phonePlaceholder' | translate"
+                    autocomplete="tel"
+                    [value]="f.phone.value"
+                    (input)="updateField('phone', $any($event.target).value)"
+                    (blur)="blurField('phone')"
+                    [attr.aria-invalid]="showError('phone')"
+                    [attr.aria-describedby]="showError('phone') ? errorId('phone') : null"
+                    [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('phone') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                  />
+                  @if (showError('phone')) {
+                    <span [id]="errorId('phone')" class="font-body text-red-700 text-xs">{{ f.phone.error | translate }}</span>
+                  }
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="flex flex-col gap-1 mb-4">
+                <label class="font-body font-semibold text-navy text-sm" for="email">{{ 'contact.form.email' | translate }}</label>
+                <input
+                  id="email"
+                  type="email"
+                  [placeholder]="'contact.form.emailPlaceholder' | translate"
+                  autocomplete="email"
+                  [value]="f.email.value"
+                  (input)="updateField('email', $any($event.target).value)"
+                  (blur)="blurField('email')"
+                  [attr.aria-invalid]="showError('email')"
+                  [attr.aria-describedby]="showError('email') ? errorId('email') : null"
+                  [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('email') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                />
+                @if (showError('email')) {
+                  <span [id]="errorId('email')" class="font-body text-red-700 text-xs">{{ f.email.error | translate }}</span>
+                }
+              </div>
+
+              <!-- Row 2: Origin + Destination -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <!-- Origin Facility -->
+                <div class="flex flex-col gap-1">
+                  <label class="font-body font-semibold text-navy text-sm" for="origin">{{ contactKey('contact.form.origin', 'express.contact.form.origin') | translate }}</label>
+                  <input
+                    id="origin"
+                    type="text"
+                    [placeholder]="contactKey('contact.form.originPlaceholder', 'express.contact.form.originPlaceholder') | translate"
+                    [value]="f.origin.value"
+                    (input)="updateField('origin', $any($event.target).value)"
+                    (blur)="blurField('origin')"
+                    [attr.aria-invalid]="showError('origin')"
+                    [attr.aria-describedby]="showError('origin') ? errorId('origin') : null"
+                    [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('origin') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                  />
+                  @if (showError('origin')) {
+                    <span [id]="errorId('origin')" class="font-body text-red-700 text-xs">{{ f.origin.error | translate }}</span>
+                  }
+                </div>
+
+                <!-- Destination Facility -->
+                <div class="flex flex-col gap-1">
+                  <label class="font-body font-semibold text-navy text-sm" for="destination">{{ contactKey('contact.form.destination', 'express.contact.form.destination') | translate }}</label>
+                  <input
+                    id="destination"
+                    type="text"
+                    [placeholder]="contactKey('contact.form.destinationPlaceholder', 'express.contact.form.destinationPlaceholder') | translate"
+                    [value]="f.destination.value"
+                    (input)="updateField('destination', $any($event.target).value)"
+                    (blur)="blurField('destination')"
+                    [attr.aria-invalid]="showError('destination')"
+                    [attr.aria-describedby]="showError('destination') ? errorId('destination') : null"
+                    [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('destination') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                  />
+                  @if (showError('destination')) {
+                    <span [id]="errorId('destination')" class="font-body text-red-700 text-xs">{{ f.destination.error | translate }}</span>
+                  }
+                </div>
+              </div>
+
+              <!-- Cargo Type -->
+              <div class="flex flex-col gap-1 mb-4">
+                <label class="font-body font-semibold text-navy text-sm" for="cargoType">{{ contactKey('contact.form.cargoType', 'express.contact.form.cargoType') | translate }}</label>
+                <div class="relative">
+                  <select
+                    id="cargoType"
+                    [value]="f.cargoType.value"
+                    (change)="updateField('cargoType', $any($event.target).value)"
+                    (blur)="blurField('cargoType')"
+                    [attr.aria-invalid]="showError('cargoType')"
+                    [attr.aria-describedby]="showError('cargoType') ? errorId('cargoType') : null"
+                    [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm appearance-none pr-10 focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (f.cargoType.value ? 'text-navy' : 'text-bali-hai') + ' ' + (showError('cargoType') ? 'border-red-400 bg-red-50' : 'border-border-gray bg-light-gray')"
+                  >
+                    <option value="" disabled>{{ contactKey('contact.form.cargoTypePlaceholder', 'express.contact.form.cargoTypePlaceholder') | translate }}</option>
+                    @for (option of cargoOptions(); track option.value) {
+                      <option [value]="option.value">{{ option.labelKey | translate }}</option>
+                    }
+                  </select>
+                  <svg class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10H7Z" fill="#6B7280"/>
+                  </svg>
+                </div>
+                @if (showError('cargoType')) {
+                  <span [id]="errorId('cargoType')" class="font-body text-red-700 text-xs">{{ f.cargoType.error | translate }}</span>
+                }
+              </div>
+
+              <!-- Handling Notes & Urgency -->
+              <div class="flex flex-col gap-1 mb-6">
+                <label class="font-body font-semibold text-navy text-sm" for="notes">{{ contactKey('contact.form.notes', 'express.contact.form.notes') | translate }} <span class="font-normal text-bali-hai">{{ 'contact.form.optional' | translate }}</span></label>
+                <textarea
+                  id="notes"
+                  rows="4"
+                  [placeholder]="contactKey('contact.form.notesPlaceholder', 'express.contact.form.notesPlaceholder') | translate"
+                  [value]="f.notes.value"
+                  (input)="updateField('notes', $any($event.target).value)"
+                  (blur)="blurField('notes')"
+                  [attr.aria-invalid]="showError('notes')"
+                  [attr.aria-describedby]="showError('notes') ? errorId('notes') : null"
+                  [class]="'w-full font-body text-sm px-4 py-2.5 border rounded-sm resize-none bg-light-gray placeholder-bali-hai focus:outline-none focus:ring-2 focus:ring-navy/20 transition ' + (showError('notes') ? 'border-red-400 bg-red-50' : 'border-border-gray')"
+                ></textarea>
+                <div class="flex justify-between">
+                  @if (showError('notes')) {
+                    <span [id]="errorId('notes')" class="font-body text-red-700 text-xs">{{ f.notes.error | translate }}</span>
+                  } @else {
+                    <span></span>
+                  }
+                  <span class="font-body text-bali-hai text-xs">{{ f.notes.value.length }}/500</span>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="flex items-center justify-center gap-2 w-full bg-brand-red hover:bg-brand-red-dark text-white font-body font-semibold text-base px-8 py-3 rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-brand-red/40"
+              >
+                {{ contactKey('contact.form.submit', 'express.contact.form.submit') | translate }}
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z" fill="white"/>
+                </svg>
+              </button>
+            </form>
+          }
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Info Panel -->
+      <div class="w-full lg:w-[40%] flex flex-col gap-6">
+
+        <!-- Direct Contact Card -->
+        <div class="bg-white border border-lavender rounded-sm p-6 shadow-sm">
+          <div class="flex items-start justify-between mb-5">
+            <h3 class="font-headline font-bold text-navy text-lg">{{ 'contact.directContact.title' | translate }}</h3>
+            <!-- Avatar Icon -->
+            <div class="w-12 h-12 rounded-full bg-athens-gray border border-border-gray flex items-center justify-center flex-shrink-0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="#7797B0"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <!-- Email -->
+            <div class="flex items-start gap-3">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#7797B0"/>
+              </svg>
+              <div>
+                <p class="font-body font-semibold text-navy text-xs uppercase tracking-wide mb-0.5">{{ 'contact.directContact.email' | translate }}</p>
+                <a href="mailto:roncordero@vitalinkcouriers.com" class="font-body text-text-secondary text-sm hover:text-navy transition-colors">
+                  roncordero&#64;vitalinkcouriers.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start gap-3">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#7797B0"/>
+              </svg>
+              <div>
+                <p class="font-body font-semibold text-navy text-xs uppercase tracking-wide mb-0.5">{{ 'contact.directContact.phone' | translate }} <span class="font-normal text-bali-hai normal-case">{{ 'contact.directContact.dispatch' | translate }}</span></p>
+                <a href="tel:+17279472309" class="font-body text-text-secondary text-sm hover:text-navy transition-colors">+1-727-947-2309</a>
+              </div>
+            </div>
+
+            <!-- Service Area -->
+            <div class="flex items-start gap-3">
+              <svg class="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#7797B0"/>
+              </svg>
+              <div>
+                <p class="font-body font-semibold text-navy text-xs uppercase tracking-wide mb-0.5">{{ 'contact.directContact.serviceArea' | translate }}</p>
+                <p class="font-body text-text-secondary text-sm">{{ 'contact.directContact.serviceAreaText' | translate }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speak with Ronald CTA -->
+          <button
+            (click)="openMessageModal()"
+            type="button"
+            class="mt-5 flex items-center justify-center gap-2 bg-whatsapp hover:opacity-90 text-white font-body font-semibold text-sm px-5 py-3 rounded-sm transition-opacity w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+          >
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12H12V10H4V12ZM4 9H16V7H4V9ZM4 6H16V4H4V6ZM0 20V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H18C18.55 0 19.0208 0.195833 19.4125 0.5875C19.8042 0.979167 20 1.45 20 2V14C20 14.55 19.8042 15.0208 19.4125 15.4125C19.0208 15.8042 18.55 16 18 16H4L0 20ZM3.15 14H18V2H2V15.125L3.15 14Z" fill="white"/>
+            </svg>
+            {{ 'contact.directContact.cta' | translate }}
+          </button>
+        </div>
+
+        <!-- Certified & Compliant Badge -->
+        <div class="bg-navy rounded-sm p-6 text-center">
+          <div class="flex justify-center mb-3">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10.71 15.71L7.5 12.5L8.91 11.09L10.71 12.89L15.09 8.51L16.5 9.92L10.71 15.71Z" fill="#D4A5E8"/>
+            </svg>
+          </div>
+          <h4 class="font-headline font-bold text-white text-base mb-1">{{ contactKey('contact.directContact.certified', 'express.contact.directContact.certified') | translate }}</h4>
+          <p class="font-body text-bali-hai text-sm mb-2">{{ contactKey('contact.directContact.certifications', 'express.contact.directContact.certifications') | translate }}</p>
+          <p class="font-body text-bali-hai text-xs leading-relaxed">{{ contactKey('contact.directContact.certDescription', 'express.contact.directContact.certDescription') | translate }}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

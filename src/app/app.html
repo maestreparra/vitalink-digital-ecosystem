@@ -1,0 +1,21 @@
+<app-language-modal
+  [showModal]="showLanguageModal()"
+  (languageSelected)="onLanguageSelected($event)"
+></app-language-modal>
+
+<app-select-message-modal
+  [showModal]="messageModalService.showModal()"
+  (methodSelected)="onMessageMethodSelected($event)"
+  (closeModalEvent)="messageModalService.closeModal()"
+></app-select-message-modal>
+
+<div
+  [attr.inert]="isAnyModalOpen() ? '' : null"
+  [attr.aria-hidden]="isAnyModalOpen() ? 'true' : null"
+>
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>

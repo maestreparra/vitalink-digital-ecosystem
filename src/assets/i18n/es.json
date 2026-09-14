@@ -1,0 +1,837 @@
+{
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "services": "Servicios",
+      "samgovandcerts": "SAM.gov & Certs.",
+      "samandcerts": "SAM & Certs",
+      "vitalinkexpress": "Express",
+      "medical": "Médico",
+      "faq": "Preguntas",
+      "blog": "Blog",
+      "contact": "Contacto"
+    },
+    "cta": "Solicitar Presupuesto",
+    "languageToggle": "Cambiar idioma"
+  },
+  "seo": {
+    "home": {
+      "title": "VitaLink Courier LLC | Mensajería Médica Urgente en Tampa Bay",
+      "description": "Servicios de mensajería médica urgente para clínicas, laboratorios y farmacias en Tarpon Springs y la Gran Bahía de Tampa. Cumplimiento HIPAA, trato directo y confiable.",
+      "keywords": "mensajería médica urgente, courier médico Tampa Bay, transporte de especímenes, logística HIPAA, entrega de farmacia, envío médico STAT, logística médica, courier Tarpon Springs, courier Gran Bahía de Tampa"
+    },
+    "about": {
+      "title": "Acerca de VitaLink Courier LLC | Responsabilidad en Logística Médica",
+      "description": "Conoce a Ronald y la responsabilidad personal detrás de VitaLink Courier LLC, sirviendo a proveedores de salud en Tarpon Springs y la Gran Bahía de Tampa.",
+      "keywords": "acerca de mensajería médica, proveedor de logística sanitaria, courier médico Tarpon Springs, responsabilidad directa, empresa conforme HIPAA"
+    },
+    "services": {
+      "title": "Servicios de Mensajería Médica | Transporte de Especímenes, Farmacia y STAT",
+      "description": "Explora los servicios de VitaLink Courier LLC: transporte de especímenes, entrega de farmacia, suministros médicos, equipo y carreras médicas STAT.",
+      "keywords": "servicios de mensajería médica, transporte de especímenes, entrega de farmacia, courier de suministros médicos, transporte de equipo médico, courier STAT, transporte de laboratorio, entrega con temperatura controlada"
+    },
+    "samgov": {
+      "title": "Registro en SAM.gov y Credenciales de Gobierno | VitaLink Courier",
+      "description": "Registro en SAM.gov de VitaLink Courier LLC, Código CAGE (1APD6), UEI (JDY8YGCVF3S9), certificaciones HIPAA, TWIC y BBP para contratación federal e institucional.",
+      "keywords": "registro en SAM.gov, Código CAGE, UEI, registro gubernamental, logística HIPAA, courier certificado TWIC, contratista federal, credenciales de courier médico"
+    },
+    "certifications": {
+      "title": "Certificaciones | Cumplimiento HIPAA, TWIC, BBP y SAM.gov",
+      "description": "Conoce las certificaciones y estándares de cumplimiento de VitaLink Courier LLC, incluyendo HIPAA, TWIC, BBP y registro en SAM.gov para logística segura.",
+      "keywords": "courier conforme HIPAA, courier certificado TWIC, transporte certificado BBP, logística registrada en SAM.gov, transporte médico seguro"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes | Mensajería Médica, Especímenes y Logística HIPAA",
+      "description": "Respuestas sobre los servicios de mensajería médica de VitaLink Courier LLC, zonas de entrega, cumplimiento HIPAA, transporte de especímenes y logística urgente en Tampa Bay.",
+      "keywords": "preguntas mensajería médica, preguntas transporte de especímenes, logística HIPAA, envío médico STAT, preguntas courier Tampa Bay"
+    },
+    "contact": {
+      "title": "Contacto VitaLink Courier LLC | Despacho de Mensajería Médica en Tampa Bay",
+      "description": "Contacta a VitaLink Courier LLC para despacho de mensajería médica, transporte de especímenes, entrega de farmacia y logística urgente de salud en la Gran Bahía de Tampa.",
+      "keywords": "contacto courier médico, despacho de mensajería médica, presupuesto transporte de especímenes, presupuesto entrega de farmacia, contacto courier Tampa Bay"
+    },
+    "blog": {
+      "title": "Blog | Información sobre Mensajería Médica, Cumplimiento y Logística",
+      "description": "Lee artículos prácticos sobre mensajería médica urgente, transporte de especímenes, cumplimiento HIPAA y logística sanitaria en Tampa Bay.",
+      "keywords": "blog mensajería médica, artículos logística sanitaria, guía courier urgente, cumplimiento HIPAA transporte"
+    },
+    "notFound": {
+      "title": "Página No Encontrada | VitaLink Courier LLC",
+      "description": "La página solicitada no está disponible. Regresa al inicio de VitaLink Courier LLC para explorar servicios de mensajería médica urgente en Tampa Bay.",
+      "keywords": "página no encontrada, VitaLink Courier LLC, mensajería médica"
+    }
+  },
+  "modals": {
+    "close": "Cerrar diálogo",
+    "selectLanguage": {
+      "headline": "Selecciona tu idioma",
+      "subheading": "Selecciona el idioma en el que deseas leer la información del sitio web.",
+      "spanish": "Español",
+      "english": "Inglés"
+    },
+    "selectMessage": {
+      "headline": "Selecciona tu método preferido para enviar tu mensaje",
+      "subheading": "Elige tu método preferido para comunicarte y enviar tu mensaje.",
+      "sms": "SMS",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Envíos Disponibles 24/7",
+      "headline": "Mensajería Médica Urgente, Personalmente Responsable",
+      "subheading": "Servicios de mensajería médica urgente con conciencia HIPAA para clínicas, laboratorios, farmacias y proveedores de cuidados en toda el área de la Gran Bahía de Tampa, con Ronald como tu punto de contacto directo.",
+      "ctaPrimary": "Solicitar Presupuesto",
+      "ctaSecondary": "Hablar con Ronald"
+    },
+    "trust": {
+      "hipaa": "Cumplimiento HIPAA",
+      "twic": "Certificado TWIC",
+      "dispatch": "Envío 24/7",
+      "samgov": "Registrado en SAM.gov"
+    },
+    "whyVitalink": {
+      "headline": "Por qué los Equipos de Atención Médica Eligen Vitalink",
+      "subheading": "Entendemos que en la logística médica, la precisión no es opcional. Cada entrega urgente de mensajería médica se maneja con responsabilidad absoluta.",
+      "specimen": {
+        "title": "Logística de Especímenes y Laboratorio",
+        "description": "Transporte controlado por temperatura adhiriéndose a protocolos rigurosos para garantizar la viabilidad de las muestras desde la clínica al laboratorio."
+      },
+      "directContact": {
+        "title": "Punto de Contacto Directo",
+        "description": "Sin centros de llamadas. Cuando necesites una actualización o tengas una solicitud urgente, hablas directamente con Ronald. La responsabilidad personal es nuestra métrica operativa principal.",
+        "cta": "Conocer a Ronald"
+      },
+      "pharmacy": {
+        "title": "Entrega de Farmacia",
+        "description": "Transporte seguro y cumplidor de productos farmacéuticos directamente a las instalaciones de atención."
+      },
+      "stat": {
+        "title": "Enrutamiento STAT",
+        "description": "Protocolos de envío inmediato para materiales médicos críticos y sensibles al tiempo."
+      }
+    },
+    "certified": {
+      "headline": "Excelencia Certificada",
+      "subheading": "Vitalink Courier LLC está fundamentalmente estructurada alrededor del cumplimiento normativo y la confianza institucional. No solo movemos artículos; gestionamos cadenas de custodia con estándares rigurosos en cada carrera de mensajería médica urgente.",
+      "hipaa": {
+        "title": "Capacitación y Cumplimiento HIPAA",
+        "description": "Adhesión estricta a protocolos de privacidad de pacientes y seguridad de datos durante el transporte físico."
+      },
+      "twic": {
+        "title": "Autorizado TWIC",
+        "description": "Autorizado para acceso seguro a instalaciones marítimas y zonas de transporte restringidas."
+      },
+      "bbp": {
+        "title": "Certificado BBP (Patógenos Transmitidos por Sangre)",
+        "description": "Capacitado en el manejo seguro y transporte de materiales biológicos."
+      },
+      "form": {
+        "title": "Asegurar un Transporte",
+        "description": "Conecta directamente con despacho para enrutamiento inmediato.",
+        "facilityName": "Nombre de la Instalación",
+        "facilityNamePlaceholder": "Ingresa el nombre de la instalación",
+        "contactName": "Nombre de Contacto",
+        "contactNamePlaceholder": "Nombre",
+        "phoneNumber": "Número de Teléfono",
+        "phoneNumberPlaceholder": "Teléfono",
+        "transportType": "Tipo de Transporte",
+        "transportOptions": {
+          "specimens": "Especímenes de laboratorio",
+          "pharmacy": "Productos farmacéuticos",
+          "equipment": "Equipo médico",
+          "supplies": "Suministros médicos"
+        },
+        "submit": "Enviar Solicitud"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "headline": "Compromiso Directo de Ronald",
+      "paragraph1": "En Vitalink Courier LLC, creemos que la logística médica requiere más que transporte, exige responsabilidad absoluta de una mensajería médica urgente de confianza.",
+      "paragraph2": "Como punto de contacto dedicado para Tarpon Springs y el área de la Gran Bahía de Tampa, me aseguro personalmente de que tus entregas de atención médica crítica cumplan con los más altos estándares de seguridad, cumplimiento y urgencia.",
+      "paragraph3": "Nuestro enfoque operativo se centra estrictamente en precisión y confianza.",
+      "ctaPrimary": "Hablar con Ronald",
+      "ctaSecondary": "Solicitar Presupuesto de Servicio"
+    },
+    "compliance": {
+      "headline": "Cumplimiento Inquebrantable",
+      "subheading": "Transporte especializado que cumple con los más altos estándares de cumplimiento regulatorio y certificación institucional.",
+      "hipaa": {
+        "title": "Cumplimiento HIPAA",
+        "description": "Adhesión estricta a protocolos de privacidad y protección de datos del paciente durante todas las fases de transporte."
+      },
+      "bbp": {
+        "title": "Certificado BBP",
+        "description": "Certificado en manejo de Patógenos Transmitidos por Sangre para transporte seguro de especímenes médicos sensibles."
+      },
+      "samgov": {
+        "title": "Registrado en SAM.gov",
+        "description": "Completamente verificado y registrado para capacidades de contratación federal e institucional."
+      },
+      "twic": {
+        "title": "Credencial TWIC",
+        "description": "Acceso autorizado a instalaciones marítimas y de transporte seguro en toda la región."
+      }
+    },
+    "accountability": {
+      "headline": "Responsabilidad Local en la Bahía de Tampa",
+      "description": "Operando desde Tarpon Springs, servimos a la región más amplia de la Gran Bahía de Tampa con conocimiento local incomparable. Cuando confías en Vitalink Courier con una entrega de atención médica urgente, no estás tratando con un centro de despacho anónimo. Estás confiando en un profesional dedicado que entiende las rutas específicas, instalaciones y urgencia requeridas por los proveedores de atención médica local.",
+      "checkmarks": {
+        "serving": "Sirviendo Tarpon Springs y Áreas Circundantes",
+        "directContact": "Punto de Contacto Directo para Todas las Rutas",
+        "response": "Respuesta Rápida para Necesidades de Laboratorio Urgente"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Logística Especializada",
+      "headline": "Servicios de Mensajería Médica Urgente para Cargas Críticas",
+      "subheading": "Transporte certificado HIPAA y BBP para especímenes, equipos y suministros críticos. Ofrecemos confiabilidad de grado médico cuando cada minuto cuenta.",
+      "ctaPrimary": "Solicitar Ejecución Inmediata",
+      "ctaSecondary": "Ver Cobertura de Servicios"
+    },
+    "portfolio": {
+      "headline": "Nuestro Portafolio de Servicios",
+      "subheading": "Logística de precisión personalizada de mensajería médica urgente para redes de atención médica, laboratorios y clínicas especializadas.",
+      "supplies": {
+        "title": "Suministros Médicos",
+        "description": "Entrega programada y enrutada de productos farmacéuticos, instrumentos quirúrgicos y reabastecimiento diario de clínicas con protocolos estrictos de cadena de custodia.",
+        "link": "Más información"
+      },
+      "specimen": {
+        "title": "Logística de Especímenes",
+        "description": "Transporte controlado por temperatura (ambiente, refrigerado, congelado) para especímenes de laboratorio críticos, asegurando viabilidad desde la clínica al laboratorio.",
+        "link": "Más información"
+      },
+      "equipment": {
+        "title": "Transporte de Equipo",
+        "description": "Transporte seguro y acolchado para dispositivos médicos sensibles, máquinas de diagnóstico y electrónica de alto valor que requieren manejo delicado.",
+        "link": "Más información"
+      }
+    },
+    "coverage": {
+      "title": "Cobertura de Servicios",
+      "description": "Basados en Tarpon Springs, FL, nuestra área de servicio principal cubre la región de la Gran Bahía de Tampa con rutas de mensajería médica urgente disponibles en toda Florida Central para cargas dedicadas.",
+      "areas": {
+        "pinellas": "Condado de Pinellas",
+        "hillsborough": "Condado de Hillsborough"
+      }
+    },
+    "streamlined": {
+      "headline": "Proceso de Logística Optimizado",
+      "description": "Hemos diseñado nuestro flujo de trabajo de despacho para máxima eficiencia, minimizando fricción para que puedas enfocarte en la atención al paciente.",
+      "step1": {
+        "title": "Solicitud",
+        "description": "Envía los detalles de tu carrera por teléfono o nuestro formulario de admisión seguro. Revisamos las especificaciones inmediatamente."
+      },
+      "step2": {
+        "title": "Confirmación",
+        "description": "Recibe un presupuesto instantáneo, transparente y ETA estimado. El despacho se inicia con tu aprobación."
+      },
+      "step3": {
+        "title": "Rastreo",
+        "description": "Mantente actualizado mediante comunicación directa con despacho hasta que se verifique la entrega exitosa.",
+        "note": "* Seguimiento del portal / ePOD llegando en Fase 3"
+      }
+    },
+    "pricing": {
+      "headline": "Estimado Transparente de Inicio",
+      "description": "Sin tarifas ocultas. Creemos en precios claros y directos adaptados a la urgencia y requisitos de tu transporte.",
+      "standard": {
+        "title": "Carrera Médica Estándar",
+        "description": "Entrega local dentro del área de cobertura base.",
+        "startingAt": "Comenzando en",
+        "includedLabel": "Servicios Incluidos",
+        "included1": "Documentación de Cadena de Custodia",
+        "included2": "Manejo Conforme a HIPAA",
+        "included3": "Control de Temperatura Estándar",
+        "variablesLabel": "Variables",
+        "variable1": "Millas más allá de la zona base",
+        "variable2": "Urgencia STAT / Prioritaria",
+        "variable3": "Servicio después de horas o fin de semana",
+        "footer": "Para rutas complejas, contratos dedicados o necesidades de transporte altamente especializadas, contáctanos para una propuesta personalizada.",
+        "ctaButton": "Solicitar Presupuesto Personalizado"
+      }
+    }
+  },
+  "certifications": {
+    "hero": {
+      "headline": "Confianza Basada en Credenciales",
+      "subheading": "En logística médica y de alto riesgo, la confianza no se asume; se verifica. Operamos estrictamente dentro de marcos regulatorios institucionales para garantizar la integridad de cada carga."
+    },
+    "solutions": {
+      "headline": "Soluciones de Logística Credenciada",
+      "subheading": "Transporte especializado que cumple con los más altos estándares de cumplimiento regulatorio y certificación institucional. Garantizamos la máxima integridad de cada envío.",
+      "hipaa": {
+        "title": "Cumplimiento HIPAA",
+        "label": "Ley de Portabilidad y Responsabilidad de Seguros de Salud",
+        "description": "Toda nuestra flota y procedimientos de manejo están estrictamente alineados con las reglas de privacidad HIPAA. Aseguramos la confidencialidad absoluta y el transporte seguro de Información de Salud Protegida (PHI), utilizando protocolos a prueba de manipulación y personal capacitado."
+      },
+      "twic": {
+        "title": "Certificado TWIC",
+        "label": "Credencial de Identificación de Trabajadores de Transporte",
+        "description": "Autorizado para acceso seguro a puertos y instalaciones marítimas. Nuestros mensajeros certificados TWIC han sido sometidos a verificaciones de antecedentes rigurosas por la TSA, permitiéndonos manejar sin problemas la logística que requiere autorización de instalaciones seguras."
+      },
+      "bbp": {
+        "title": "Certificado BBP",
+        "label": "Estándar de Patógenos Transmitidos por Sangre",
+        "description": "Experiencia en los estándares de BBP de OSHA para manejo y transporte de especímenes. Nuestros protocolos incluyen capacitación obligatoria en kits de derrames, gestión de entorno controlado por temperatura y contención especializada para prevenir contaminación."
+      },
+      "samgov": {
+        "title": "Registrado en SAM.gov",
+        "label": "Sistema para la Administración de Adjudicaciones",
+        "description": "Completamente registrado y verificado para contratación federal. Como entidad activa de SAM, cumplimos con los requisitos rigurosos de transparencia operativa y financiera exigidos por agencias gubernamentales y contratistas de defensa."
+      }
+    },
+    "roadmap": {
+      "headline": "Hoja de Ruta de Cumplimiento",
+      "subheading": "Nuestras credenciales no son estáticas. Empleamos un flujo de trabajo riguroso y continuo para asegurar que cada manejador cumple con nuestros estándares institucionales antes de tocar un paquete.",
+      "step1": {
+        "title": "1. Evaluación Obligatoria",
+        "description": "Verificaciones de antecedentes federales exhaustivas, evaluaciones de drogas y revisiones de historial de conducción son obligatorias antes de la incorporación."
+      },
+      "step2": {
+        "title": "2. Capacitación Institucional",
+        "description": "Módulos de capacitación específicos en HIPAA, BBP y TWIC aseguran cumplimiento operativo desde el primer día."
+      },
+      "step3": {
+        "title": "3. Revisiones de Certificación Trimestral",
+        "description": "Auditorías continuas y recertificación mantienen los estándares de cumplimiento al nivel más alto."
+      },
+      "step4": {
+        "title": "4. Mejora Continua",
+        "description": "Bucles de retroalimentación y métricas de rendimiento impulsan la excelencia operativa."
+      }
+    }
+  },
+  "contact": {
+    "headline": "Contáctenos",
+    "subheading": "El formulario es para la admisión de presupuestos, no para envío en directo aún. Por favor proporciona información detallada para una evaluación precisa de tus necesidades urgentes de mensajería médica.",
+    "form": {
+      "title": "Formulario de Solicitud de Presupuesto",
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "p.ej. Juan Pérez",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "email": "Dirección de Correo",
+      "emailPlaceholder": "nombre@organizacion.com",
+      "origin": "Instalación/Dirección de Origen",
+      "originPlaceholder": "Ubicación de Recogida",
+      "destination": "Instalación/Dirección de Destino",
+      "destinationPlaceholder": "Ubicación de Entrega",
+      "cargoType": "Tipo de Carga",
+      "cargoTypePlaceholder": "Selecciona Clasificación de Carga",
+      "notes": "Notas de Manejo y Urgencia",
+      "notesPlaceholder": "Por favor especifica requisitos de temperatura, necesidades de acceso TWIC, o cronogramas de entrega...",
+      "submit": "Revisar y Contactar a Despacho",
+      "handoffTitle": "Falta un último paso",
+      "handoffMessage": "Tu información fue validada en este navegador, pero no ha sido enviada. Contacta a despacho por WhatsApp o SMS para completar la solicitud de presupuesto.",
+      "handoffAction": "Contactar a Despacho",
+      "optional": "(opcional)",
+      "cargoOptions": {
+        "medicalSupplies": "Suministros médicos",
+        "laboratorySpecimens": "Especímenes de laboratorio",
+        "pharmaceuticalProducts": "Productos farmacéuticos",
+        "medicalEquipment": "Equipo médico",
+        "bloodProducts": "Sangre / Hemoderivados",
+        "biohazardousMaterials": "Materiales biopeligrosos",
+        "other": "Otro"
+      },
+      "errors": {
+        "summary": "Revisa los campos resaltados antes de continuar.",
+        "fullNameRequired": "El nombre completo es obligatorio",
+        "fullNameLength": "El nombre debe tener al menos 2 caracteres",
+        "phoneRequired": "El número de teléfono es obligatorio",
+        "phoneInvalid": "Ingresa un número de teléfono válido",
+        "emailRequired": "El correo electrónico es obligatorio",
+        "emailInvalid": "Ingresa un correo electrónico válido",
+        "originRequired": "La instalación de origen es obligatoria",
+        "destinationRequired": "La instalación de destino es obligatoria",
+        "cargoTypeRequired": "Selecciona un tipo de carga",
+        "notesLength": "Las notas deben tener 500 caracteres o menos"
+      },
+      "message": {
+        "intro": "Hola VitaLink, quisiera solicitar un presupuesto de mensajería."
+      }
+    },
+    "directContact": {
+      "title": "Contacto Directo",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "dispatch": "(Despacho directo)",
+      "serviceArea": "Área de Servicio",
+      "serviceAreaText": "Tarpon Springs / Gran Bahía de Tampa",
+      "cta": "Hablar con Ronald",
+      "certified": "Certificado y Cumplidor",
+      "certifications": "Certificado HIPAA • TWIC • BBP",
+      "certDescription": "Confiabilidad de grado médico para tus activos más críticos."
+    }
+  },
+  "faq": {
+    "headline": "Preguntas Frecuentes",
+    "subheading": "Encuentra respuestas a preguntas comunes sobre nuestros servicios seguros de mensajería médica, estándares de cumplimiento y fases operativas.",
+    "search": "Buscar en Preguntas Frecuentes...",
+    "noResults": "Ninguna pregunta coincide con tu búsqueda.",
+    "contactUs": "Contáctanos directamente",
+    "categories": {
+      "about": {
+        "title": "Acerca de VitaLink",
+        "question1": "¿Qué áreas sirve VitaLink Courier LLC?",
+        "answer1": "Servimos la región de la Gran Bahía de Tampa incluyendo el Condado de Pinellas, Condado de Hillsborough y Condado de Pasco como nuestra área de servicio principal. Rutas extendidas están disponibles en toda Florida Central para cargas dedicadas. Contáctanos para discutir rutas fuera de nuestra cobertura estándar.",
+        "question2": "¿Qué diferencia a VitaLink de otros mensajeros estándar?",
+        "answer2": "Nuestro modelo de punto de contacto directo nos diferencia. Cuando llamas a VitaLink, hablas directamente con Ronald, no con un centro de llamadas. Nos especializamos exclusivamente en logística médica y mantenemos cumplimiento estricto con HIPAA, BBP, TWIC y SAM.gov. Cada entrega es personalmente responsable, no solo rastreada por un sistema."
+      },
+      "services": {
+        "title": "Servicios y Precios",
+        "question1": "¿Cómo se determina el precio para entregas STAT?",
+        "answer1": "Las entregas STAT comienzan en $45 para una carrera médica estándar dentro de nuestra área de cobertura base. El precio final depende del millaje más allá de la zona base, nivel de urgencia (STAT vs. estándar), sincronización después de horas o fin de semana, y el tipo de carga que requiere manejo especial. Contáctanos para un presupuesto inmediato.",
+        "question2": "¿Manejan rutas diarias programadas?",
+        "answer2": "Sí. Ofrecemos contratos de rutas programadas para clínicas, laboratorios e instalaciones de atención médica que requieren recogidas y entregas diarias o recurrentes. Estos arreglos vienen con despacho prioritario, ventanas dedicadas y precios basados en volumen. Comunícate para discutir un horario personalizado."
+      },
+      "compliance": {
+        "title": "Cumplimiento y Certificación",
+        "question1": "¿Son tus conductores conformes a HIPAA?",
+        "answer1": "Absolutamente. Todos los mensajeros de VitaLink completan capacitación obligatoria en HIPAA que cubre privacidad del paciente, manejo de Información de Salud Protegida (PHI) y protocolos de cadena de custodia. El empaque a prueba de manipulación y procedimientos de transporte seguro se aplican en cada carrera.",
+        "question2": "¿Qué significa la certificación TWIC para mí?",
+        "answer2": "La autorización TWIC (Credencial de Identificación de Trabajador de Transporte) significa que nuestros mensajeros están verificados de antecedentes y autorizados por la TSA para acceder a instalaciones marítimas seguras, puertos y zonas de transporte restringidas. Esto es esencial si tu instalación requiere acceso seguro para entregas."
+      },
+      "support": {
+        "title": "Soporte y Urgencia",
+        "question1": "¿Cuál es el tiempo de respuesta para una solicitud STAT?",
+        "answer1": "Nos comprometemos a responder en minutos para solicitudes STAT. Una vez confirmado, el despacho se inicia inmediatamente. Nuestro objetivo es tener un mensajero en ruta dentro de 30 minutos para solicitudes dentro de nuestra área de servicio principal. Para emergencias críticas, contáctanos vía WhatsApp o teléfono para la respuesta más rápida.",
+        "question2": "¿Cómo me comunico con despacho después de horas?",
+        "answer2": "El despacho de VitaLink está disponible 24/7. Puedes comunicarte con nosotros vía WhatsApp al +1 (727) 947-2309 o llamando directamente al mismo número. Las solicitudes fuera de horas se manejan con la misma urgencia y profesionalismo que las horas estándar de negocio. Nunca dejamos una carrera crítica sin respuesta."
+      }
+    }
+  },
+  "notFound": {
+    "headline": "¿Se perdió en el camino?",
+    "subheading": "Parece que esta ruta de entrega no está disponible en este momento. Vamos a encaminar tus pasos de nuevo.",
+    "btnHome": "Ir a Inicio",
+    "btnServices": "Ver Servicios"
+  },
+  "governmentRegistration": {
+    "hero": {
+      "badge": "Credenciales de Gobierno",
+      "headline": "Registro en SAM.gov y Credenciales Gubernamentales",
+      "subheading": "VitaLink Courier LLC está registrada y verificada en plataformas clave de gobierno, garantizando credibilidad institucional y elegibilidad para contratación federal en tus necesidades de logística médica."
+    },
+    "cta": {
+      "verifySamGov": "Verificar en SAM.gov",
+      "contactUs": "Contáctanos",
+      "section": {
+        "headline": "¿Preguntas Sobre Nuestras Credenciales?",
+        "description": "Nuestras certificaciones y registro gubernamental garantizan cumplimiento con los más altos estándares. Contáctanos para discutir cómo VitaLink puede servir a tu organización."
+      },
+      "contactButton": "Contactar VitaLink"
+    },
+    "samGov": {
+      "title": "Registro en SAM.gov",
+      "description": "VitaLink Courier LLC está registrada y verificada en SAM.gov (Sistema para Gestión de Premios), proporcionando elegibilidad para contratos gubernamentales y transparencia institucional.",
+      "cageCode": {
+        "label": "Código CAGE",
+        "description": "Identificador de Entidad Comercial y Gubernamental para elegibilidad en contratación federal.",
+        "verified": "Verificado y Activo"
+      },
+      "uei": {
+        "label": "UEI (ID de Entidad Única)",
+        "description": "El identificador único requerido para todos los premios federales y acuerdos de asistencia.",
+        "verified": "Verificado y Activo"
+      },
+      "naics": {
+        "title": "Clasificaciones Industriales NAICS",
+        "description": "VitaLink está registrada bajo múltiples códigos NAICS que reflejan nuestros servicios especializados de logística médica y operaciones de mensajería.",
+        "code1": "Servicios de Transporte de Carga General",
+        "code2": "Transporte de Carga General (Local)",
+        "code3": "Transporte de Carga General (Larga Distancia, Carga Completa)",
+        "code4": "Transporte de Carga Especializada"
+      }
+    },
+    "codes": {
+      "tableHeader": {
+        "code": "Código",
+        "description": "Descripción"
+      },
+      "samgov": {
+        "title": "Códigos de Registro en SAM.gov",
+        "code1": "Servicios de mensajería y entrega urgente",
+        "code2": "Transporte general de mercancías por carretera, local",
+        "code3": "Transporte de carga general por carretera, larga distancia, carga completa",
+        "code4": "Transporte de mercancías especializadas (excepto artículos usados), transporte local",
+        "code5": "Soporte administrativo: mensajero/repartidor",
+        "code6": "Transporte/viajes/reubicación-transporte: carga por motor",
+        "code7": "Transporte/viajes/reubicación-transporte: otro"
+      },
+      "floridaGeneral": {
+        "title": "My Florida Marketplace - Mensajería General",
+        "code1": "Servicios de correo, recogida o entrega de correo",
+        "code2": "Servicios de organización de transporte",
+        "code3": "Transporte de mercancías por carretera",
+        "code4": "Servicios postales, de paquetería y mensajería"
+      },
+      "floridaMedical": {
+        "title": "My Florida Marketplace - Mensajería Médica",
+        "code1": "Evacuación médica en ambulancia",
+        "code2": "Contenedores y suministros para la recolección y el transporte de muestras",
+        "code3": "Laboratorios médicos",
+        "code4": "Servicios de manipulación de materiales"
+      }
+    },
+    "certifications": {
+      "title": "Certificaciones Gubernamentales y de Cumplimiento",
+      "description": "Todas las certificaciones verifican el compromiso de VitaLink con cumplimiento regulatorio, estándares institucionales y logística sanitaria segura.",
+      "hipaa": {
+        "title": "Cumplimiento HIPAA",
+        "description": "Certificada en protocolos de la Ley de Portabilidad y Responsabilidad de Seguros Médicos para privacidad y seguridad de datos médicos.",
+        "status": "✓ Certificada"
+      },
+      "twic": {
+        "title": "Certificada TWIC",
+        "description": "Credencial de Identificación de Trabajador de Transporte para acceso seguro a instalaciones marítimas y de transporte restringidas.",
+        "status": "✓ Certificada"
+      },
+      "bbp": {
+        "title": "Certificada BBP",
+        "description": "Capacitación y certificación en Patógenos Transmitidos por Sangre para manejo seguro de especímenes médicos biohazardosos.",
+        "status": "✓ Certificada"
+      },
+      "samgov": {
+        "title": "Registrada en SAM.gov",
+        "description": "Registro verificado para elegibilidad de contratación federal y credibilidad institucional a nivel gubernamental.",
+        "status": "✓ Verificada"
+      }
+    },
+    "whyMatters": {
+      "title": "Por Qué el Registro Gubernamental es Importante",
+      "description": "El registro gubernamental y las certificaciones demuestran responsabilidad institucional, cumplimiento regulatorio y confiabilidad para tu logística médica crítica.",
+      "trust": {
+        "title": "Confianza y Responsabilidad",
+        "description": "El registro en SAM.gov garantiza supervisión gubernamental y verificación, proporcionando seguridad de que VitaLink cumple con los estándares federales de disponibilidad institucional."
+      },
+      "verification": {
+        "title": "Verificación y Cumplimiento",
+        "description": "Cada certificación representa verificación independiente de nuestro cumplimiento con regulaciones específicas y estándares de la industria críticos para transporte médico."
+      },
+      "standards": {
+        "title": "Estándares de la Industria",
+        "description": "Múltiples certificaciones demuestran adhesión a los más altos estándares en logística sanitaria, protección de privacidad y manipulación segura de especímenes."
+      },
+      "assurance": {
+        "title": "Seguridad del Cliente",
+        "description": "Cuando te asocias con VitaLink, obtienes la confianza que viene de trabajar con un proveedor de logística médica verificado, certificado y registrado por el gobierno."
+      }
+    }
+  },
+  "footer": {
+    "logo": "VitaLink Courier LLC",
+    "description": "Servicio de Mensajería Médica Crítica, Personalmente Responsable. Sirviendo el área de la Gran Bahía de Tampa.",
+    "expressDescription": "Entregas el mismo día y regionales con coordinación directa, rutas flexibles y servicio responsable.",
+    "quickLinks": {
+      "title": "Enlaces Rápidos",
+      "services": "Servicios",
+      "certifications": "Certificaciones",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "certifications": {
+      "title": "Certificaciones"
+    },
+    "contactDispatch": {
+      "title": "Contactar Despacho",
+      "address": "Tarpon Springs, FL",
+      "availability": "Disponible 24/7",
+      "whatsapp": "Hablar con Ronald"
+    },
+    "copyright": "© 2026 Vitalink Courier LLC. Todos los derechos reservados. Tarpon Springs, FL.",
+    "privacyPolicy": "Política de Privacidad"
+  },
+  "generalservices": {
+    "hero": {
+      "title": "Servicios Generales",
+      "subtitle": "Próximamente con opciones integrales de servicios para sus necesidades de logística médica."
+    },
+    "comingsoon": {
+      "heading": "Próximamente",
+      "description": "Estamos preparando Vitalink Express, para satisfacer sus necesidades de logística médica. Vuelve pronto para más información.",
+      "cta": {
+        "home": "Volver al Inicio",
+        "contact": "Contáctanos"
+      },
+      "info": "Mientras tanto, contáctanos directamente para discutir tus requisitos específicos."
+    }
+  },
+  "express": {
+    "seo": {
+      "title": "Servicios de Mensajería General | VitaLink Express",
+      "description": "Entrega mismo día para automóviles, agricultura, alimentos y maquinaria en Tampa Bay.",
+      "keywords": "mensajería general Tampa Bay, entrega mismo día, mensajería de piezas de auto, entrega agrícola, servicio de entrega de alimentos, transporte de maquinaria",
+      "sector": {
+        "title": "VitaLink Express | Servicios por Sector",
+        "description": "Servicios de mensajería express confiables para tu industria",
+        "keywords": "mensajería express, entrega mismo día"
+      }
+    },
+    "home": {
+      "headline": "Servicios de Mensajería Express Confiables",
+      "subheading": "Entrega mismo día para Automóviles, Agricultura, Alimentos y Maquinaria",
+      "cta": "Solicitar una Cotización",
+      "badge": "Entrega Express 24/7",
+      "sectors_title": "Nuestros Sectores de Servicio",
+      "why_title": "¿Por Qué Elegir VitaLink Express?",
+      "why_description": "Entregamos más que paquetes — entregamos confiabilidad",
+      "speed": "Rapidez",
+      "speed_desc": "Entrega mismo día para envíos urgentes",
+      "reliable": "Confiable",
+      "reliable_desc": "Servicio dependiente en el que puedes confiar",
+      "professional": "Profesional",
+      "professional_desc": "Mensajeros experimentados y certificados",
+      "ready_title": "¿Listo para Comenzar?",
+      "ready_cta": "Solicita una Cotización Hoy"
+    },
+    "services": {
+      "title": "Servicios de Mensajería General",
+      "description": "Servicios de mensajería rápidos y confiables para múltiples industrias",
+      "items": {
+        "sameDay": "Entrega Mismo Día",
+        "sameDay_desc": "Cuando el tiempo es crítico, nuestro servicio el mismo día recoge y entrega tu envío en cuestión de horas — no días. Ideal para piezas urgentes, documentos o pedidos de último momento que simplemente no pueden esperar.",
+        "regional": "Envíos Regionales",
+        "regional_desc": "Rutas de entrega consistentes y confiables que cubren toda el área de la Gran Bahía de Tampa, para que tu negocio pueda contar con tiempos de tránsito predecibles en envíos recurrentes.",
+        "specialized": "Transporte Especializado",
+        "specialized_desc": "No todos los envíos caben en una caja estándar. Desde artículos sobredimensionados hasta carga poco convencional, diseñamos soluciones de transporte personalizadas según lo que realmente necesitas mover.",
+        "documents": "Entrega de Documentos",
+        "documents_desc": "Contratos, documentos legales y papeleo sensible entregados de forma segura y puntual, con la responsabilidad y el cuidado en la cadena de custodia que tus documentos merecen.",
+        "ecommerce": "Cumplimiento de E-Commerce",
+        "ecommerce_desc": "Del almacén a la puerta del cliente, ayudamos a los minoristas en línea a cumplir con las expectativas de sus compradores — entrega confiable de última milla que mantiene tus pedidos en movimiento y tus reseñas en cinco estrellas.",
+        "refrigerated": "Transporte Refrigerado",
+        "refrigerated_desc": "Entrega controlada por temperatura para productos perecederos"
+      },
+      "why": {
+        "title": "¿Por Qué Elegir VitaLink Express?",
+        "subtitle": "Entregamos más que paquetes — entregamos confiabilidad",
+        "sameDay": {
+          "title": "Servicio el Mismo Día",
+          "description": "Entrega rápida para envíos urgentes en toda la región"
+        },
+        "professional": {
+          "title": "Equipo Profesional",
+          "description": "Conductores experimentados y servicio al cliente dedicado"
+        },
+        "insured": {
+          "title": "Completamente Asegurado",
+          "description": "Cobertura completa para tu tranquilidad"
+        },
+        "certified": {
+          "title": "Certificado y Conforme",
+          "description": "Certificado DOT y en total cumplimiento con los estándares de la industria"
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Comenzar?",
+        "button": "Solicitar una Cotización"
+      },
+      "backHome": "Volver al Inicio",
+      "backServices": "Volver a Servicios",
+      "detail": {
+        "sameDay": {
+          "intro": "Ya sea un solo paquete o varias paradas en toda el área de Tampa Bay, nuestro servicio el mismo día está diseñado para la velocidad sin sacrificar el cuidado — cada entrega es rastreada, asegurada y manejada por un conductor dedicado.",
+          "features": "Qué Incluye",
+          "feature_Real-Time Coordination": "Comunicación directa con tu conductor desde la recolección hasta la entrega, para que siempre sepas en qué estado está tu envío.",
+          "feature_Flexible Pickup Windows": "Programa una recolección que se ajuste a tu operación, desde salidas tempranas hasta solicitudes de última hora en la tarde.",
+          "feature_Point-to-Point Routing": "Rutas dedicadas y directas sin paradas innecesarias — tu envío va directo de A a B.",
+          "feature_Proof of Delivery": "Confirmación en el momento en que tu envío llega, dándote a ti y a tus clientes tranquilidad."
+        },
+        "regional": {
+          "intro": "Para negocios que envían regularmente en toda el área de Tampa Bay, nuestras rutas regionales ofrecen la previsibilidad de un socio logístico dedicado sin el costo de administrar tu propia flota.",
+          "features": "Qué Incluye",
+          "feature_Scheduled Routes": "Horarios recurrentes de recolección y entrega diseñados según las necesidades regulares de envío de tu negocio.",
+          "feature_Multi-Stop Efficiency": "Rutas coordinadas con múltiples paradas que mantienen los costos bajos mientras cubren más terreno.",
+          "feature_Regional Coverage": "Servicio confiable en Tarpon Springs y toda la Gran Bahía de Tampa.",
+          "feature_Dedicated Support": "Un punto de contacto directo para cambios de horario, preguntas o ajustes urgentes."
+        },
+        "specialized": {
+          "intro": "La carga poco convencional necesita un socio que pueda adaptarse. Trabajamos contigo para planificar el transporte de envíos que no encajan en los servicios de mensajería estándar — de forma segura y en tus tiempos.",
+          "features": "Qué Incluye",
+          "feature_Custom Route Planning": "Planes de transporte diseñados según el tamaño, peso y necesidades de manejo de tu envío específico.",
+          "feature_Oversized & Irregular Cargo": "Experiencia moviendo artículos que no caben en una furgoneta típica o en un proceso de entrega estándar.",
+          "feature_Careful Handling": "Cuidado adicional y equipo apropiado para artículos frágiles, voluminosos o de alto valor.",
+          "feature_Flexible Scheduling": "Coordinación de horarios para recolecciones y entregas que requieren planificación especial."
+        },
+        "documents": {
+          "intro": "Desde contratos firmados hasta expedientes confidenciales, la entrega de documentos exige más que rapidez — exige responsabilidad. Tratamos cada documento con la misma seriedad que su contenido.",
+          "features": "Qué Incluye",
+          "feature_Chain-of-Custody Care": "Documentos manejados directamente por tu conductor desde la recolección hasta la firma en la entrega.",
+          "feature_Time-Sensitive Filings": "Entrega rápida para documentos judiciales, cierres y otro papeleo con fecha límite.",
+          "feature_Confidential Handling": "Transporte discreto para contratos y documentos comerciales sensibles.",
+          "feature_Delivery Confirmation": "Comprobante de entrega para que tengas un registro claro de que el documento llegó."
+        },
+        "ecommerce": {
+          "intro": "Tus clientes esperan una entrega rápida y confiable — y te ayudamos a cumplir esa expectativa. VitaLink Express apoya a los minoristas en línea con una entrega de última milla confiable que protege tu reputación.",
+          "features": "Qué Incluye",
+          "feature_Last-Mile Delivery": "Entrega final confiable desde tu almacén o centro de cumplimiento hasta la puerta de tu cliente.",
+          "feature_Scalable Support": "Capacidad de entrega que se ajusta a la demanda de temporada y al volumen de pedidos.",
+          "feature_Order Tracking": "Visibilidad del estado de la entrega para que puedas mantener informados a tus clientes.",
+          "feature_Return Pickups": "Servicio coordinado de recolección para devoluciones de clientes cuando lo necesites."
+        }
+      }
+    },
+    "sectors": {
+      "backHome": "Volver al Inicio",
+      "goServices": "Ir a Servicios",
+      "ready": "¿Listo para comenzar?",
+      "contact_cta": "Contáctanos para una Cotización",
+      "automobiles": {
+        "title": "Entrega de Piezas de Automóviles y Vehículos",
+        "description": "Desde entregas urgentes de piezas para concesionarios hasta transporte de vehículos, VitaLink Express mantiene en movimiento a los negocios automotrices de Tampa Bay con recolección el mismo día y entregas confiables y aseguradas.",
+        "intro": "Concesionarios, talleres y distribuidores de piezas dependen de la rapidez. Ya sea un solo componente para una reparación urgente o una reposición completa de inventario, nuestros conductores tratan cada entrega automotriz con la urgencia que tus clientes esperan.",
+        "services": "Servicios para la Industria Automotriz",
+        "service_Auto Parts": "Entrega urgente de piezas y componentes entre proveedores, concesionarios y talleres — para que una pieza faltante nunca detenga un trabajo.",
+        "service_Vehicle Transport": "Transporte seguro y asegurado de vehículos y equipos especializados, manejado con el cuidado que merece un activo valioso.",
+        "service_Accessories": "Entrega puntual de accesorios, suministros y productos de posventa para mantener tu taller abastecido y a tus clientes satisfechos.",
+        "service_Inventory Logistics": "Rutas coordinadas de recolección y entrega que mantienen equilibrado el inventario multi-ubicación sin demoras."
+      },
+      "agriculture": {
+        "title": "Productos y Equipos Agrícolas",
+        "description": "Entrega confiable y oportuna para fincas, distribuidores y agronegocios de Tampa Bay — desde cosechas frescas hasta equipos esenciales.",
+        "intro": "La agricultura no espera. Desde cosechas perecederas que deben llegar rápido al mercado hasta fallas de equipo que detienen la producción, VitaLink Express entrega con la urgencia que tu operación necesita.",
+        "services": "Servicios para Agricultura",
+        "service_Crop Delivery": "Transporte rápido y cuidadoso de cosechas y productos frescos de la finca al mercado, minimizando el tiempo fuera del campo.",
+        "service_Equipment Transport": "Transporte confiable de tractores, piezas de riego y equipo agrícola — incluyendo repuestos urgentes que mantienen la operación funcionando.",
+        "service_Seed Distribution": "Distribución programada y bajo demanda de semillas, alimento y suministros agrícolas en toda la región.",
+        "service_Produce Logistics": "Logística coordinada para productores y distribuidores que mueven productos a múltiples destinos en plazos ajustados."
+      },
+      "food-beverage": {
+        "title": "Entrega de Alimentos y Bebidas",
+        "description": "Entrega puntual y con control de temperatura para restaurantes, distribuidores y negocios de servicio de alimentos en Tampa Bay.",
+        "intro": "En el servicio de alimentos, la frescura y el tiempo lo son todo. VitaLink Express maneja perecederos e ingredientes con cuidado en el control de temperatura y la puntualidad que tu cocina necesita.",
+        "services": "Servicios para Alimentos y Bebidas",
+        "service_Perishable Delivery": "Transporte cuidadoso y con control de temperatura para productos perecederos, para que la calidad llegue igual que salió.",
+        "service_Temperature Control": "Opciones de logística climatizada para artículos sensibles, desde ingredientes fríos hasta alimentos preparados.",
+        "service_Ingredient Distribution": "Distribución confiable y programada de ingredientes entre proveedores, cocinas y operaciones comerciales de alimentos.",
+        "service_Restaurant Supply": "Entregas de suministro bajo demanda y recurrentes para restaurantes y negocios de servicio de alimentos que no pueden permitirse demoras."
+      },
+      "machinery": {
+        "title": "Transporte de Maquinaria Pesada y Equipos",
+        "description": "Transporte especializado y asegurado para equipo industrial y cargas pesadas — diseñado para los negocios de construcción, manufactura e industria de Tampa Bay.",
+        "intro": "El tiempo de inactividad es costoso. Cuando un equipo falla o una obra necesita maquinaria con urgencia, VitaLink Express ofrece el manejo especializado y la rapidez que requieren las operaciones industriales.",
+        "services": "Servicios para Maquinaria e Industrial",
+        "service_Equipment Transport": "Transporte cuidadoso de equipo industrial y componentes de maquinaria, manejado con la precisión que requieren los activos pesados.",
+        "service_Heavy Load": "Transporte coordinado de cargas pesadas y sobredimensionadas, planificado con seguridad y cumplimiento normativo.",
+        "service_Industrial Delivery": "Entrega programada y urgente de materiales y piezas industriales a obras e instalaciones.",
+        "service_Machinery Installation": "Entrega de equipo coordinada con los tiempos de instalación, para que la maquinaria llegue exactamente cuando tu equipo esté listo."
+      }
+    },
+    "codes": {
+      "title": "Códigos y Certificaciones",
+      "description": "VitaLink Express mantiene todas las certificaciones y normas de cumplimiento necesarias.",
+      "items": {
+        "dot": "Certificado DOT",
+        "ifta": "Cumplimiento IFTA",
+        "insurance": "Completamente Asegurado",
+        "safety": "Certificado de Seguridad"
+      },
+      "details": {
+        "dot": {
+          "1": "Certificado por el Departamento de Transporte",
+          "2": "Cumplimiento de seguridad verificado",
+          "3": "Auditorías e inspecciones regulares",
+          "4": "Aprobado para comercio interestatal"
+        },
+        "ifta": {
+          "1": "Acuerdo Internacional de Impuesto sobre Combustible",
+          "2": "Cumplimiento de impuestos sobre combustible",
+          "3": "Operaciones interestatales",
+          "4": "Sistemas de gestión de registros"
+        },
+        "insurance": {
+          "1": "Cobertura de responsabilidad civil general",
+          "2": "Seguro de carga",
+          "3": "Compensación laboral",
+          "4": "Protección de cobertura total"
+        },
+        "safety": {
+          "1": "Programa de capacitación en seguridad",
+          "2": "Protocolos de prevención de accidentes",
+          "3": "Mantenimiento regular de vehículos",
+          "4": "Monitoreo de cumplimiento"
+        }
+      },
+      "why": {
+        "title": "Por Qué Importan las Certificaciones",
+        "paragraph1": "Nuestras certificaciones no son solo credenciales — son prueba de nuestro compromiso con la seguridad, la confiabilidad y el cumplimiento. Cada certificado representa estándares rigurosos y mejora continua.",
+        "paragraph2": "Ya sea que envíes piezas automotrices, productos agrícolas, alimentos o maquinaria industrial, puedes confiar en que VitaLink Express cumple o supera todos los requisitos de la industria.",
+        "cta": "Solicitar Más Información"
+      },
+      "compliance": {
+        "title": "Estándares de Cumplimiento",
+        "dot": {
+          "title": "Cumplimiento DOT",
+          "description": "Mantenemos un estricto cumplimiento de las regulaciones del Departamento de Transporte para todas las operaciones interestatales."
+        },
+        "insurance": {
+          "title": "Protección de Seguro",
+          "description": "Una cobertura integral garantiza que tus envíos estén protegidos durante todo el trayecto."
+        },
+        "safety": {
+          "title": "Seguridad Primero",
+          "description": "La capacitación regular y el mantenimiento de vehículos mantienen la seguridad como nuestra máxima prioridad."
+        },
+        "audits": {
+          "title": "Auditorías Continuas",
+          "description": "Auditorías de terceros verifican nuestro cumplimiento e identifican áreas de mejora continua."
+        }
+      }
+    },
+    "contact": {
+      "title": "Contactar a VitaLink Express",
+      "description": "Solicita una cotización para mensajería general, entregas regionales, documentos, e-commerce o transporte especializado. Este formulario registra tus datos para seguimiento; no ofrece despacho en vivo.",
+      "cta": "Envíanos un Mensaje",
+      "form": {
+        "title": "Solicitud de Cotización Express",
+        "origin": "Dirección de Recogida",
+        "originPlaceholder": "Ubicación de recogida",
+        "destination": "Dirección de Entrega",
+        "destinationPlaceholder": "Ubicación de entrega",
+        "cargoType": "Categoría del Envío",
+        "cargoTypePlaceholder": "Selecciona una categoría de envío",
+        "notes": "Notas de Manejo y Horario",
+        "notesPlaceholder": "Describe dimensiones, necesidades de manejo, requisitos de acceso y horario solicitado...",
+        "submit": "Preparar Solicitud",
+        "handoffTitle": "Falta un último paso",
+        "handoffMessage": "Tus datos fueron validados en este navegador, pero no han sido enviados. Contacta a Ronald por WhatsApp o SMS para completar tu solicitud de cotización Express.",
+        "handoffAction": "Contactar a Ronald",
+        "cargoOptions": {
+          "sameDay": "Entrega el Mismo Día",
+          "regional": "Entrega Regional",
+          "specialized": "Transporte Especializado",
+          "documents": "Documentos",
+          "ecommerce": "E-commerce",
+          "automobiles": "Automóviles",
+          "agriculture": "Agricultura",
+          "foodBeverage": "Alimentos y Bebidas",
+          "machinery": "Maquinaria",
+          "other": "Otro"
+        },
+        "errors": {
+          "originRequired": "La dirección de recogida es obligatoria",
+          "destinationRequired": "La dirección de entrega es obligatoria",
+          "cargoTypeRequired": "Selecciona una categoría de envío"
+        },
+        "message": {
+          "intro": "Hola VitaLink Express, quisiera solicitar una cotización de mensajería."
+        }
+      },
+      "directContact": {
+        "certified": "Certificado y Asegurado",
+        "certifications": "DOT • IFTA • Seguro • Seguridad",
+        "certDescription": "Servicio de mensajería responsable para envíos generales, regionales y especializados."
+      }
+    },
+    "common": {
+      "learnMore": "Ver más"
+    }
+  }
+}

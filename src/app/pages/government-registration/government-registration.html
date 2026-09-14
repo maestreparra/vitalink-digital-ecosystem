@@ -1,0 +1,575 @@
+<!-- HERO SECTION -->
+<section
+  class="relative overflow-hidden min-h-[460px] md:min-h-[520px] flex items-center"
+  [style.backgroundImage]="'url(/assets/images/sam-gov.jpg)'"
+  style="background-size: cover; background-position: center; background-attachment: fixed;">
+  <div class="absolute inset-0 bg-gradient-to-r from-navy/40 via-navy/30 to-transparent"></div>
+
+  <div class="relative z-10 max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="flex flex-col gap-6 md:gap-8">
+      <div class="inline-flex items-center gap-2.5 w-fit">
+        <div class="w-2 h-2 rounded-full bg-brand-red"></div>
+        <span class="font-body text-sm font-semibold text-brand-red uppercase tracking-label">
+          {{ 'governmentRegistration.hero.badge' | translate }}
+        </span>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="font-headline font-bold text-white text-4xl md:text-5xl leading-tight-headline tracking-headline">
+          {{ 'governmentRegistration.hero.headline' | translate }}
+        </h1>
+        <p class="font-body text-base md:text-lg text-white/90 leading-relaxed max-w-[600px]">
+          {{ 'governmentRegistration.hero.subheading' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <a
+          href="https://sam.gov"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 bg-brand-red text-white font-body font-semibold text-base px-8 py-4 rounded-sm shadow-sm hover:bg-brand-red-dark transition-colors whitespace-nowrap"
+        >
+          {{ 'governmentRegistration.cta.verifySamGov' | translate }}
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.5 2.5L2.5 17.5M17.5 2.5H10M17.5 2.5V10"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <a
+          routerLink="/contact"
+          class="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-body font-semibold text-base px-8 py-4 rounded-sm hover:bg-white/10 transition-colors whitespace-nowrap"
+        >
+          {{ 'governmentRegistration.cta.contactUs' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAM.GOV REGISTRATION SECTION -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 flex flex-col items-center gap-3">
+      <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight">
+        {{ 'governmentRegistration.samGov.title' | translate }}
+      </h2>
+      <p class="font-body text-text-secondary text-base md:text-lg leading-relaxed max-w-[640px]">
+        {{ 'governmentRegistration.samGov.description' | translate }}
+      </p>
+    </div>
+
+    <!-- SAM.GOV CODES GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <!-- CAGE Code Card -->
+      <div class="border border-lavender rounded-sm bg-athens-gray p-8 flex flex-col gap-4">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 7H13V13H11V7ZM11 15H13V17H11V15Z"
+                fill="#B7151D"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-headline font-bold text-navy text-lg mb-2">
+              {{ 'governmentRegistration.samGov.cageCode.label' | translate }}
+            </h3>
+            <p class="font-body text-text-secondary text-sm mb-3">
+              {{ 'governmentRegistration.samGov.cageCode.description' | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-lavender pt-4">
+          <p class="font-headline font-bold text-navy text-3xl">1APD6</p>
+          <p class="font-body text-text-secondary text-sm mt-1">
+            {{ 'governmentRegistration.samGov.cageCode.verified' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- UEI Card -->
+      <div class="border border-lavender rounded-sm bg-athens-gray p-8 flex flex-col gap-4">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 7H13V13H11V7ZM11 15H13V17H11V15Z"
+                fill="#B7151D"
+              />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-headline font-bold text-navy text-lg mb-2">
+              {{ 'governmentRegistration.samGov.uei.label' | translate }}
+            </h3>
+            <p class="font-body text-text-secondary text-sm mb-3">
+              {{ 'governmentRegistration.samGov.uei.description' | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-lavender pt-4">
+          <p class="font-headline font-bold text-navy text-3xl">JDY8YGCVF3S9</p>
+          <p class="font-body text-text-secondary text-sm mt-1">
+            {{ 'governmentRegistration.samGov.uei.verified' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAICS CODES -->
+    <div class="mt-12 pt-12 border-t border-border-gray">
+      <h3 class="font-headline font-bold text-navy text-xl md:text-2xl mb-6">
+        {{ 'governmentRegistration.samGov.naics.title' | translate }}
+      </h3>
+      <p class="font-body text-text-secondary text-base mb-6 max-w-[640px]">
+        {{ 'governmentRegistration.samGov.naics.description' | translate }}
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="border border-border-gray rounded-sm p-4 bg-white hover:border-brand-red transition-colors">
+          <p class="font-headline font-semibold text-navy text-lg">492110</p>
+          <p class="font-body text-text-secondary text-sm mt-2">
+            {{ 'governmentRegistration.samGov.naics.code1' | translate }}
+          </p>
+        </div>
+        <div class="border border-border-gray rounded-sm p-4 bg-white hover:border-brand-red transition-colors">
+          <p class="font-headline font-semibold text-navy text-lg">484110</p>
+          <p class="font-body text-text-secondary text-sm mt-2">
+            {{ 'governmentRegistration.samGov.naics.code2' | translate }}
+          </p>
+        </div>
+        <div class="border border-border-gray rounded-sm p-4 bg-white hover:border-brand-red transition-colors">
+          <p class="font-headline font-semibold text-navy text-lg">484121</p>
+          <p class="font-body text-text-secondary text-sm mt-2">
+            {{ 'governmentRegistration.samGov.naics.code3' | translate }}
+          </p>
+        </div>
+        <div class="border border-border-gray rounded-sm p-4 bg-white hover:border-brand-red transition-colors">
+          <p class="font-headline font-semibold text-navy text-lg">484220</p>
+          <p class="font-body text-text-secondary text-sm mt-2">
+            {{ 'governmentRegistration.samGov.naics.code4' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGISTRATION CODES TABLES -->
+    <div class="mt-12 pt-12 border-t border-border-gray">
+      <!-- SAM.GOV TABLE -->
+      <div class="mb-12">
+        <h3 class="font-headline font-bold text-navy text-xl md:text-2xl mb-4">
+          {{ 'governmentRegistration.codes.samgov.title' | translate }}
+        </h3>
+        <div class="overflow-x-auto border border-border-gray rounded-sm bg-white">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b border-border-gray bg-light-gray">
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.code' | translate }}</th>
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.description' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">492110</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code1' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">484110</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code2' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">484121</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code3' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">484220</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code4' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">R602</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code5' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">V112</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code6' | translate }}</td>
+              </tr>
+              <tr class="hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">V119</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.samgov.code7' | translate }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- MY FLORIDA MARKETPLACE - MENSAJERIA GENERAL TABLE -->
+      <div class="mb-12">
+        <h3 class="font-headline font-bold text-navy text-xl md:text-2xl mb-4">
+          {{ 'governmentRegistration.codes.floridaGeneral.title' | translate }}
+        </h3>
+        <div class="overflow-x-auto border border-border-gray rounded-sm bg-white">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b border-border-gray bg-light-gray">
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.code' | translate }}</th>
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.description' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78102203</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaGeneral.code1' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78141500</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaGeneral.code2' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78101800</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaGeneral.code3' | translate }}</td>
+              </tr>
+              <tr class="hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78102200</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaGeneral.code4' | translate }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- MY FLORIDA MARKETPLACE - MENSAJERIA MEDICA TABLE -->
+      <div>
+        <h3 class="font-headline font-bold text-navy text-xl md:text-2xl mb-4">
+          {{ 'governmentRegistration.codes.floridaMedical.title' | translate }}
+        </h3>
+        <div class="overflow-x-auto border border-border-gray rounded-sm bg-white">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b border-border-gray bg-light-gray">
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.code' | translate }}</th>
+                <th class="px-6 py-3 text-left font-headline font-bold text-navy text-sm">{{ 'governmentRegistration.codes.tableHeader.description' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78111815</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaMedical.code1' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">41104100</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaMedical.code2' | translate }}</td>
+              </tr>
+              <tr class="border-b border-border-gray hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">85121800</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaMedical.code3' | translate }}</td>
+              </tr>
+              <tr class="hover:bg-light-gray transition-colors">
+                <td class="px-6 py-3 font-headline font-semibold text-navy">78121600</td>
+                <td class="px-6 py-3 font-body text-text-secondary">{{ 'governmentRegistration.codes.floridaMedical.code4' | translate }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS GRID SECTION - HIDDEN (replaced by new certifications section below) -->
+<section class="bg-page-bg py-16 md:py-20 hidden">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 flex flex-col items-center gap-3">
+      <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight">
+        {{ 'governmentRegistration.certifications.title' | translate }}
+      </h2>
+      <p class="font-body text-text-secondary text-base md:text-lg leading-relaxed max-w-[640px]">
+        {{ 'governmentRegistration.certifications.description' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- HIPAA Card -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+              fill="#B7151D"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">
+          {{ 'governmentRegistration.certifications.hipaa.title' | translate }}
+        </h3>
+        <p class="font-body text-text-secondary text-sm flex-1">
+          {{ 'governmentRegistration.certifications.hipaa.description' | translate }}
+        </p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">
+            {{ 'governmentRegistration.certifications.hipaa.status' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- TWIC Card -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+              fill="#B7151D"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">
+          {{ 'governmentRegistration.certifications.twic.title' | translate }}
+        </h3>
+        <p class="font-body text-text-secondary text-sm flex-1">
+          {{ 'governmentRegistration.certifications.twic.description' | translate }}
+        </p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">
+            {{ 'governmentRegistration.certifications.twic.status' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- BBP Card -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+              fill="#B7151D"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">
+          {{ 'governmentRegistration.certifications.bbp.title' | translate }}
+        </h3>
+        <p class="font-body text-text-secondary text-sm flex-1">
+          {{ 'governmentRegistration.certifications.bbp.description' | translate }}
+        </p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">
+            {{ 'governmentRegistration.certifications.bbp.status' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- SAM.GOV Registered Card -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+              fill="#B7151D"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">
+          {{ 'governmentRegistration.certifications.samgov.title' | translate }}
+        </h3>
+        <p class="font-body text-text-secondary text-sm flex-1">
+          {{ 'governmentRegistration.certifications.samgov.description' | translate }}
+        </p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">
+            {{ 'governmentRegistration.certifications.samgov.status' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNMENT & COMPLIANCE CERTIFICATIONS -->
+<section class="bg-page-bg py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 flex flex-col items-center gap-3">
+      <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight">
+        {{ 'certifications.solutions.headline' | translate }}
+      </h2>
+      <p class="font-body text-text-secondary text-base md:text-lg leading-relaxed max-w-[640px]">
+        {{ 'certifications.solutions.subheading' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- HIPAA Compliant -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.95 13.55L12.6 7.9L11.175 6.475L6.95 10.7L4.85 8.6L3.425 10.025L6.95 13.55ZM8 20C5.68333 19.4167 3.77083 18.0875 2.2625 16.0125C0.754167 13.9375 0 11.6333 0 9.1V3L8 0L16 3V9.1C16 11.6333 15.2458 13.9375 13.7375 16.0125C12.2292 18.0875 10.3167 19.4167 8 20Z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">{{ 'certifications.solutions.hipaa.title' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm flex-1">{{ 'certifications.solutions.hipaa.description' | translate }}</p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">✓ Certified</p>
+        </div>
+      </div>
+
+      <!-- TWIC Certified -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V7C0 6.45 0.195833 5.97917 0.5875 5.5875C0.979167 5.19583 1.45 5 2 5H7V2C7 1.45 7.19583 0.979167 7.5875 0.5875C7.97917 0.195833 8.45 0 9 0H11C11.55 0 12.0208 0.195833 12.4125 0.5875C12.8042 0.979167 13 1.45 13 2V5H18C18.55 5 19.0208 5.19583 19.4125 5.5875C19.8042 5.97917 20 6.45 20 7V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H2Z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">{{ 'certifications.solutions.twic.title' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm flex-1">{{ 'certifications.solutions.twic.description' | translate }}</p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">✓ Certified</p>
+        </div>
+      </div>
+
+      <!-- BBP Certified -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 17V11H13V17H11ZM11 9V7H13V9H11Z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">{{ 'certifications.solutions.bbp.title' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm flex-1">{{ 'certifications.solutions.bbp.description' | translate }}</p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">✓ Certified</p>
+        </div>
+      </div>
+
+      <!-- SAM.gov Registered -->
+      <div class="border border-lavender rounded-sm bg-white p-8 flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-sm bg-brand-red/10 flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 16V9H5V16H3ZM9 16V9H11V16H9ZM0 20V18H20V20H0ZM15 16V9H17V16H15ZM0 7V5L10 0L20 5V7H0Z" fill="#D42E2E"/>
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-navy text-lg">{{ 'certifications.solutions.samgov.title' | translate }}</h3>
+        <p class="font-body text-text-secondary text-sm flex-1">{{ 'certifications.solutions.samgov.description' | translate }}</p>
+        <div class="pt-4 border-t border-lavender">
+          <p class="font-body text-brand-red text-sm font-semibold">✓ Verified</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THESE MATTER SECTION -->
+<section class="bg-navy py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 flex flex-col items-center gap-3">
+      <h2 class="font-headline font-bold text-white text-2xl md:text-[32px] leading-tight">
+        {{ 'governmentRegistration.whyMatters.title' | translate }}
+      </h2>
+      <p class="font-body text-bali-hai text-base md:text-lg leading-relaxed max-w-[640px]">
+        {{ 'governmentRegistration.whyMatters.description' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Trust & Accountability -->
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              fill="#D42E2E"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-white text-lg">
+          {{ 'governmentRegistration.whyMatters.trust.title' | translate }}
+        </h3>
+        <p class="font-body text-bali-hai text-base leading-relaxed">
+          {{ 'governmentRegistration.whyMatters.trust.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Verification & Compliance -->
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              fill="#D42E2E"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-white text-lg">
+          {{ 'governmentRegistration.whyMatters.verification.title' | translate }}
+        </h3>
+        <p class="font-body text-bali-hai text-base leading-relaxed">
+          {{ 'governmentRegistration.whyMatters.verification.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Industry Standards -->
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              fill="#D42E2E"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-white text-lg">
+          {{ 'governmentRegistration.whyMatters.standards.title' | translate }}
+        </h3>
+        <p class="font-body text-bali-hai text-base leading-relaxed">
+          {{ 'governmentRegistration.whyMatters.standards.description' | translate }}
+        </p>
+      </div>
+
+      <!-- Client Assurance -->
+      <div class="flex flex-col gap-4">
+        <div class="w-12 h-12 rounded-full bg-brand-red/20 flex items-center justify-center flex-shrink-0">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
+              fill="#D42E2E"
+            />
+          </svg>
+        </div>
+        <h3 class="font-headline font-bold text-white text-lg">
+          {{ 'governmentRegistration.whyMatters.assurance.title' | translate }}
+        </h3>
+        <p class="font-body text-bali-hai text-base leading-relaxed">
+          {{ 'governmentRegistration.whyMatters.assurance.description' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="bg-white py-16 md:py-20">
+  <div class="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center flex flex-col items-center gap-6">
+      <div class="flex flex-col gap-3 items-center">
+        <h2 class="font-headline font-bold text-navy text-2xl md:text-[32px] leading-tight">
+          {{ 'governmentRegistration.cta.section.headline' | translate }}
+        </h2>
+        <p class="font-body text-text-secondary text-base md:text-lg leading-relaxed max-w-[640px]">
+          {{ 'governmentRegistration.cta.section.description' | translate }}
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <a
+          routerLink="/contact"
+          class="inline-flex items-center justify-center bg-brand-red text-white font-body font-semibold text-base px-8 py-4 rounded-sm shadow-sm hover:bg-brand-red-dark transition-colors whitespace-nowrap"
+        >
+          {{ 'governmentRegistration.cta.contactButton' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

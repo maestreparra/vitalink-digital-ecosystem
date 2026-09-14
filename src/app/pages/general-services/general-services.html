@@ -1,0 +1,40 @@
+<!-- COMING SOON SECTION -->
+<section class="bg-white py-20 md:py-32">
+  <div class="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center flex flex-col items-center gap-6">
+      <!-- Icon -->
+      <div class="w-20 h-20 rounded-full bg-brand-red/10 flex items-center justify-center">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12.5 7H11V13H17.2L12.5 7Z" fill="#D42E2E"/>
+        </svg>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="font-headline font-bold text-navy text-3xl md:text-4xl leading-tight">
+        {{ 'generalservices.comingsoon.heading' | translate }}
+      </h1>
+
+      <!-- Description -->
+      <p class="font-body text-text-secondary text-base md:text-lg leading-relaxed max-w-[600px]">
+        {{ 'generalservices.comingsoon.description' | translate }}
+      </p>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+        <a href="/" class="inline-flex items-center justify-center px-8 py-3 bg-brand-red hover:bg-brand-red/90 text-white font-semibold rounded-sm transition-colors duration-200">
+          {{ 'generalservices.comingsoon.cta.home' | translate }}
+        </a>
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-3 border-2 border-brand-red text-brand-red hover:bg-brand-red/5 font-semibold rounded-sm transition-colors duration-200">
+          {{ 'generalservices.comingsoon.cta.contact' | translate }}
+        </a>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="mt-12 pt-12 border-t border-lavender">
+        <p class="font-body text-text-secondary text-sm">
+          {{ 'generalservices.comingsoon.info' | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
