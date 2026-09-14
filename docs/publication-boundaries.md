@@ -58,16 +58,16 @@ This language preserves authorship while accurately acknowledging the workflow.
 
 ## Gate 6 publication checklist
 
-- [ ] Revalidate on Node.js `22.22.3 LTS`.
-- [ ] Run tests, production build and dependency audit.
-- [ ] Run a complete working-tree and Git-history secret scan.
-- [ ] Audit tracked files against this allowlist and denylist.
-- [ ] Confirm all visual-asset rights and replace unavailable references.
-- [ ] Complete desktop and mobile browser UAT for both product surfaces.
+- [x] Revalidate on Node.js `22.22.3 LTS`.
+- [x] Run tests, production build and dependency audit.
+- [x] Run a complete working-tree and Git-history secret scan.
+- [x] Audit tracked files against this allowlist and denylist.
+- [x] Confirm all visual-asset rights and replace unavailable references.
+- [x] Complete desktop and mobile browser UAT for both product surfaces.
 - [ ] Complete keyboard, focus, contrast, landmark and accessible-name checks.
 - [ ] Validate external links, HTTP statuses, metadata and canonical URLs in production.
 - [ ] Capture approved Figma and production evidence.
-- [ ] Decide between preserved history and a clean public-history branch.
+- [x] Decide between preserved history and a clean public-history branch.
 - [ ] Obtain owner approval for the exact final diff.
 - [ ] Configure the personal GitHub remote only after approval.
 - [ ] Commit and push only with explicit authorization.

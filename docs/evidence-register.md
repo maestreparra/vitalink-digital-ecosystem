@@ -12,7 +12,7 @@
 | ID | Claim or evidence | Source | Confidence | Public use |
 |---|---|---|---|---|
 | E01 | Giomar Maestre directed product, brand, UX/UI and implementation work | Owner confirmation plus isolated source-history evidence | Owner-provided + repository-supported | Authorship narrative with client contribution disclosure |
-| E02 | The public portfolio edition will use a curated clean history without client repository metadata | Gate 6 publication decision and final public-history inspection | Pending publication QA | Privacy boundary; not an authorship metric |
+| E02 | The public portfolio edition uses a curated clean history without inherited client repository metadata | Gate 6B tree comparison and full public-history inspection | Verified | Privacy boundary; not an authorship metric |
 | E03 | Main and Express are delivered from one Angular application | `src/app/app.routes.ts`, shared components and services | Verified | Architecture narrative |
 | E04 | English and Spanish resources each contain 478 leaf values | `src/assets/i18n/en.json`, `src/assets/i18n/es.json` | Verified | Localization scope; not proof of linguistic quality |
 | E05 | Seven responsive thresholds are configured | `tailwind.config.js` | Verified | Responsive-system scope; not proof of perfect behavior |
