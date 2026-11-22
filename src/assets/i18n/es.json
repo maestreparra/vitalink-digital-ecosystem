@@ -527,6 +527,7 @@
     }
   },
   "footer": {
+    "creditUrl": "https://maestreparra.github.io/es/proyectos/vitalink-digital-ecosystem/",
     "logo": "VitaLink Courier LLC",
     "description": "Servicio de Mensajería Médica Crítica, Personalmente Responsable. Sirviendo el área de la Gran Bahía de Tampa.",
     "expressDescription": "Entregas el mismo día y regionales con coordinación directa, rutas flexibles y servicio responsable.",

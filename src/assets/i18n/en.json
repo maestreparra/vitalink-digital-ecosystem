@@ -527,6 +527,7 @@
     }
   },
   "footer": {
+    "creditUrl": "https://maestreparra.github.io/en/work/vitalink-digital-ecosystem/",
     "logo": "VitaLink Courier LLC",
     "description": "Critical Medical Courier, Personally Accountable. Serving the Greater Tampa Bay area.",
     "expressDescription": "Same-day and regional delivery with direct coordination, flexible routing, and accountable service.",
